@@ -1,0 +1,17 @@
+# ignore an entire directory
+/config/database.php
+/config/email.php
+/config/server.php
+
+/logs/*
+!/tmp/empty
+
+/tmp/*
+!/tmp/empty
+!/tmp/cache/empty
+!/tmp/sessions/empty
+
+/public/coverage
+
+# ignore a file type
+#*.json
