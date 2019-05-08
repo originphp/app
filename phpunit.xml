@@ -3,7 +3,7 @@
     colors="true"
     processIsolation="false"
     stopOnFailure="false"
-    bootstrap="./origin/src/bootstrap.php"
+    bootstrap="./vendor/originphp/originphp/src/bootstrap.php"
     backupGlobals="true"
     >
     <testsuites>
@@ -17,7 +17,7 @@
     <listeners>
         <listener
             class="Origin\TestSuite\OriginTestListener"
-        file ="./origin/src/TestSuite/OriginTestListener.php"
+        file ="./vendor/originphp/originphp/src/TestSuite/OriginTestListener.php"
         >
     </listener>
 	</listeners>
