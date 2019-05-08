@@ -4,14 +4,9 @@
     "homepage": "https://www.originphp.com",
     "type": "project",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-             "Vendor\\": "vendor/"
-        }
-    },
     "require": {
       "php": ">=7.0.0",
-      "originphp/framework": "*",
+      "originphp/framework": "dev-composer",
       "ext-intl": "*",
       "ext-mbstring": "*"
     }
