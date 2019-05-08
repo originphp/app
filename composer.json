@@ -4,9 +4,9 @@
     "homepage": "https://www.originphp.com",
     "type": "project",
     "license": "MIT",
-    "require": {
+    "require-dev": {
       "php": ">=7.0.0",
-      "originphp/framework": "dev-composer",
+      "originphp/originphp": "dev-composer",
       "ext-intl": "*",
       "ext-mbstring": "*"
     }
