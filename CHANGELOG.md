@@ -19,4 +19,7 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+### Changed
+- Plugins moved to own repos
+
 ## [1.0.0] - xxxx-xx-xx
