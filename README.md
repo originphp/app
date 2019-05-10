@@ -26,6 +26,14 @@ The container only needs to be built once, after this you will use the up and do
 $ docker-compose up
 ```
 
+Now the development server is running, but first you need to install the Generate and Debug plugin, you will need to access the docker container from the command line.
+
+```linux
+$ docker-compose run app bash
+$ bin/console plugin install originphp/generate-plugin
+$ bin/console plugin install originphp/debug-plugin
+```
+
 Then you will now be able to access your app at [http://localhost:8000/](http://localhost:8000/).
 
 To shutdown the container
