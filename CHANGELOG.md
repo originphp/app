@@ -20,6 +20,13 @@ Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
 
+## [1.2.3] - 2019-05-27
+### Addded
+- empty schema and seed sql files
+
+### Removed
+- Removed accidentally commited files
+
 ## [1.2.2] - 2019-05-25
 ### Removed
 - load legacy plugin from bootstrap
