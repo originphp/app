@@ -19,6 +19,11 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+## [1.3.0] - 2019-05-31
+
+### Added
+- default environments
+
 ## [1.2.4] - 2019-05-28
 ### Fixed
 - Fixed MySQL 8 password issue
