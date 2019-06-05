@@ -19,6 +19,14 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+## [1.4.0] - 2019-06-05
+### Removed
+- Bookmarks shell
+
+### Changed
+- Change framework name
+
+### 
 ## [1.3.0] - 2019-05-31
 
 ### Added
@@ -29,7 +37,7 @@ Delete tag:   git tag -d <tag_name>
 - Fixed MySQL 8 password issue
 
 ## [1.2.3] - 2019-05-27
-### Addded
+### Added
 - empty schema and seed sql files
 
 ### Removed
