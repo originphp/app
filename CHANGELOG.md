@@ -19,6 +19,9 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+## [1.4.1] - 2019-06-05
+- added default storage template
+
 ## [1.4.0] - 2019-06-05
 ### Removed
 - Bookmarks shell
