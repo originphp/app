@@ -19,6 +19,10 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+## [1.4.3] - 2019-06-06
+### Removed
+- default environments
+
 ## [1.4.2] - 2019-06-05
 ### Fixed
 - Fixed paths due to framework name change
