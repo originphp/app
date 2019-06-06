@@ -19,6 +19,10 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+## [1.5.1] - 2019-06-06
+### Added
+- Add sample console application (db)
+
 ## [1.5.0] - 2019-06-06
 ### Changed
 - bootstrap handles autoloading and loads application.php
