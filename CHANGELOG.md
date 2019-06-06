@@ -19,6 +19,13 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+## [1.4.4] - 2019-06-06
+### Fixed
+- Storage template
+
+### Changed
+- .gitignore
+
 ## [1.4.3] - 2019-06-06
 ### Removed
 - default environments
