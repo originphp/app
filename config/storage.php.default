@@ -9,7 +9,7 @@ use Origin\Utility\Storage;
 Storage::config(
     'default',[
         'engine' => 'Local',
-        'path' => null
+        'root' => null
         ]
     );
 
