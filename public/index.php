@@ -13,8 +13,8 @@ require dirname(__DIR__) . DIRECTORY_SEPARATOR .'vendor'. DIRECTORY_SEPARATOR .'
  * Mini router for static content on built in server
  */
 if (php_sapi_name() == 'cli-server') {
-    $path = parse_url($_SERVER['REQUEST_URI'],PHP_URL_PATH);
-    if (file_exists(WEBROOT . $path)) {
+    $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+    if (file_exists(WEBROOT . $path) and is_file(WEBROOT . $path)) {
         return false;
     }
 }
