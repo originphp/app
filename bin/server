@@ -1,9 +1,22 @@
-#!/bin/bash
-echo "> STARTING ORIGIN PHP SERVER"
-SCRIPT_DIRECTORY=$(cd `dirname $0` && pwd)
-ROOT=$(dirname "$SCRIPT_DIRECTORY");
-if [ "$1" != "" ]; then
-    php -S "localhost:$1" -t public ${ROOT}/public/index.php
-else
-     php -S localhost:8000 -t public ${ROOT}/public/index.php
-fi
+#!/usr/bin/env php
+<?php
+/**
+ * OriginPHP Framework
+ * Copyright 2018 - 2019 Jamiel Sharief.
+ *
+ * Licensed under The MIT License
+ * The above copyright notice and this permission notice shall be included in all copies or substantial
+ * portions of the Software.
+ *
+ * @copyright    Copyright (c) Jamiel Sharief
+ * @link         https://www.originphp.com
+ * @license      https://opensource.org/licenses/mit-license.php MIT License
+ */
+$port = 8000;
+if(isset($argv[1])){
+    $port = $argv[1];
+}
+
+echo "Starting server on http://localhost:{$port}\n";
+$cmd = "php -S localhost:{$port} -t public " . dirname(__DIR__) . '/'. 'public' . '/'. 'index.php';
+pclose(popen($cmd,'r'));

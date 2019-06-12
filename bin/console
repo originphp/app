@@ -1,4 +1,15 @@
-#!/bin/bash
-SCRIPT_DIRECTORY=$(cd `dirname $0` && pwd)
-ROOT=$(dirname "$SCRIPT_DIRECTORY");
-exec php -q ${ROOT}/vendor/originphp/framework/src/Console/console.php "$@"
+#!/usr/bin/env php
+<?php
+/**
+ * OriginPHP Framework
+ * Copyright 2018 - 2019 Jamiel Sharief.
+ *
+ * Licensed under The MIT License
+ * The above copyright notice and this permission notice shall be included in all copies or substantial
+ * portions of the Software.
+ *
+ * @copyright    Copyright (c) Jamiel Sharief
+ * @link         https://www.originphp.com
+ * @license      https://opensource.org/licenses/mit-license.php MIT License
+ */
+include dirname(__DIR__) . DIRECTORY_SEPARATOR . 'vendor'. DIRECTORY_SEPARATOR .'originphp'. DIRECTORY_SEPARATOR .'framework'. DIRECTORY_SEPARATOR .'src'. DIRECTORY_SEPARATOR . 'Console' . DIRECTORY_SEPARATOR . 'console.php';
