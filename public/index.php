@@ -19,5 +19,11 @@ if (php_sapi_name() == 'cli-server') {
     }
 }
 
-$Dispatcher = new Origin\Http\Dispatcher();
-$Dispatcher->start();
+use Origin\Http\Request;
+use Origin\Http\Response;
+use App\Application;
+
+$request = new Request();
+$response =  new Response();
+$Application = new Application($request, $response);
+$response->send();

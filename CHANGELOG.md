@@ -19,6 +19,10 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+## [1.8.1] - 2019-06-20
+### Fixed
+- Public/index.php to use the new method of dispatching
+
 ## [1.8.0] - 2019-06-20
 ### Removed
 - Old shell files
