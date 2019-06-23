@@ -19,6 +19,9 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+### Security
+- Changed the Docker development environment apache configuration file to serve public folder.
+
 ## [1.8.1] - 2019-06-20
 ### Fixed
 - Public/index.php to use the new method of dispatching
