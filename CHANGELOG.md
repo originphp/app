@@ -19,6 +19,10 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+## [1.8.3] - 2019-06-24
+### Changed
+- Security.salt to Security.pepper
+
 ## [1.8.2] - 2019-06-24
 ### Changed
 - Composer.json - cleaned this up and improved
