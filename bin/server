@@ -19,5 +19,5 @@ if (isset($argv[1])) {
 
 echo "OriginPHP Development Server\n";
 echo "Starting on http://localhost:{$port}\n";
-$cmd = "php -S localhost:{$port} -t public " . dirname(__DIR__) . DIRECTORY_SEPARATOR. 'public' . DIRECTORY_SEPARATOR. 'index.php';
+$cmd = "php -S localhost:{$port} -t public";
 pclose(popen($cmd, 'r'));

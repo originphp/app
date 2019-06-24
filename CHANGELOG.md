@@ -19,6 +19,10 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+## [1.8.4] - 2019-06-24
+### Fixed
+- PHP server not running properly when run in a folder with spaces e.g. 'the folder'
+
 ## [1.8.3] - 2019-06-24
 ### Changed
 - Security.salt to Security.pepper
