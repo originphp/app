@@ -6,9 +6,7 @@ $autoloader->directory(ROOT);
 
 $namespaces = [
     'App' => 'src',
-    'App\\Test' => 'tests',
-    'Origin' => 'origin/src',
-    'Origin\\Test' => 'origin/tests'
+    'App\\Test' => 'tests'
 ];
 
 $autoloader->addNamespaces($namespaces);

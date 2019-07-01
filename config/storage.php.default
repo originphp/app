@@ -4,7 +4,7 @@
  * which you can switch between.
  *
  */
-use Origin\Utility\Storage;
+use Origin\Storage\Storage;
 
 Storage::config(
     'default',[
