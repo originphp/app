@@ -19,6 +19,12 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+## [1.9.1] - 2019-07-12
+### Fixed
+- CSS for notices
+- @Property for Html helper
+- Corrected locale:generate command name in comment
+
 ## [1.9.0] - 2019-06-30
 ### Changed
 - Changed namespace for Cache and Storage
