@@ -10,6 +10,7 @@ use Origin\View\View;
  * @property \Origin\View\Helper\DateHelper $Date
  * @property \Origin\View\Helper\NumberHelper $Number
  * @property \Origin\View\Helper\PaginatorHelper $Paginator
+ * @property \Origin\View\Helper\HtmlHelper $Html
  */
 class AppView extends View
 {
