@@ -128,3 +128,11 @@ div.datetime label {
 .index .table th,.related .table th {
   background-color:#dee2e6;
 }
+
+/*
+* ErrorHandler: display notices, warnings etc
+*/
+.origin-error {
+  padding: 10px;
+  background-color: gold;
+}
