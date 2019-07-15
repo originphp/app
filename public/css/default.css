@@ -98,10 +98,12 @@ input.form-control, select.form-control, textarea.form-control {
 
 .alert-info {
   background-color: #3498db;
+  color: #fff;
 }
 
 .alert-warning {
   background-color: #f1c40f;
+    color: #fff;
 }
 
 div.date input,div.time input {
