@@ -19,6 +19,16 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+## [1.10.0] - 2019-07-23
+### Added
+- Delocalize behavior loaded by default
+
+### Changed
+- CSS alert text color for warning and info
+
+### Security
+- Disabled directory listing from Apache config for Dockerized Development Environment
+
 ## [1.9.1] - 2019-07-12
 ### Fixed
 - CSS for notices
