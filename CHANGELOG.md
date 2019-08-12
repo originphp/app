@@ -19,6 +19,20 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+
+## [1.12.0] - 2019-08-12
+### Changed
+- Changed default schema types from sql to php
+- Changed seed.sql to seed.php
+
+
+## [1.11.0] - 2019-08-01
+
+### Added
+- Cache configuration settings for model schema
+- Migrations agnostic schema
+- Queue agnostic schema
+
 ## [1.10.0] - 2019-07-23
 ### Added
 - Delocalize behavior loaded by default
