@@ -4,6 +4,11 @@ namespace App\Controller;
 use Origin\Controller\Controller;
 use Origin\I18n\I18n;
 
+/**
+ * @property \Origin\Controller\Component\SessionComponent $Session
+ * @property \Origin\Controller\Component\CookieComponent $Cookie
+ * @property \Origin\Controller\Component\AuthComponent $Auth
+ */
 class AppController extends Controller
 {
     /**
