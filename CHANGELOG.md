@@ -20,6 +20,10 @@ Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
 
+## [1.12.1] - 2019-08-21
+### Fixed
+- Changed index name on queue migration
+
 ## [1.12.0] - 2019-08-12
 ### Changed
 - Changed default schema types from sql to php

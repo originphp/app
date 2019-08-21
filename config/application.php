@@ -20,8 +20,6 @@ Configure::write('Session.timeout', 3600);
 
 Cache::config('default', ['engine' => 'File']);
 
-
-
 /**
  * Generate a random string such as md5(time()) and place
  * here. This is used by Security:hash 
@@ -58,5 +56,11 @@ Cache::config('origin_model', [
 /*
  * Load your plugins here
  * @example Plugin::load('ContactManager');
+ */
+
+
+
+/*
+ * Initialize the plugins 
  */
 Plugin::initialize();
