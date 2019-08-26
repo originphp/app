@@ -19,6 +19,13 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+## [1.14.0] - 2019-08-26
+### Added
+- AppService
+- AppJob
+
+### Changed
+- Change the queue schema file to work with the new queue system aka Job
 
 ## [1.12.1] - 2019-08-21
 ### Fixed

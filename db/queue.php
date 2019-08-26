@@ -3,7 +3,7 @@ use Origin\Model\Schema;
 
 class QueueSchema extends Schema
 {
-    const VERSION = 20190821104734;
+    const VERSION = 20190826100000;
 
     /**
      * Schema
@@ -14,10 +14,9 @@ class QueueSchema extends Schema
         'columns' => [
             'id' => ['type' => 'integer', 'limit' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'autoIncrement' => true],
             'queue' => ['type' => 'string', 'limit' => 80, 'null' => false, 'default' => null],
-            'data' => ['type' => 'text', 'null' => false, 'limit' => 16777215, 'default' => null],
+            'data' => ['type' => 'text', 'null' => false,'limit' => 16777215, 'default' => null],
             'status' => ['type' => 'string', 'limit' => 40, 'null' => false, 'default' => null],
-            'locked' => ['type' => 'boolean', 'null' => true, 'default' => false],
-            'tries' => ['type' => 'integer', 'limit' => 1, 'unsigned' => false, 'null' => true, 'default' => 0],
+            'locked' => ['type' => 'datetime', 'null' => true, 'default' => null],
             'scheduled' => ['type' => 'datetime', 'null' => false, 'default' => null],
             'created' => ['type' => 'datetime', 'null' => false, 'default' => null],
             'modified' => ['type' => 'datetime', 'null' => false, 'default' => null],
@@ -27,7 +26,7 @@ class QueueSchema extends Schema
         ],
         'indexes' => [
             'queue_index' => ['type' => 'index', 'column' => 'queue'],
-            'status_index' => ['type' => 'index', 'column' => 'status'],
+            'scheduled_index' => ['type' => 'index', 'column' => 'scheduled'],
         ],
         'options' => ['engine' => 'InnoDB', 'collation' => 'utf8mb4_0900_ai_ci','autoIncrement' => 1000],
     ];
