@@ -19,7 +19,7 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
-## [1.15.0] - 2019-08-26
+## [1.15.0] - 2019-08-28
 ### Added
 - AppMailer
 - mailer layout
