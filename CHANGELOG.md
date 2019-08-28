@@ -19,6 +19,14 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+## [1.15.0] - 2019-08-26
+### Added
+- AppMailer
+- mailer layout
+
+### Removed
+- legacy autoloader.php
+
 ## [1.14.0] - 2019-08-26
 ### Added
 - AppService

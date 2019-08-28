@@ -4,7 +4,7 @@
  * which you can switch between.
  *
  */
-use Origin\Utility\Email;
+use Origin\Mailer\Email;
 
 Email::config('default',[
         'host' => 'smtp.gmail.com',
