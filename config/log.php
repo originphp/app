@@ -7,5 +7,5 @@
 use Origin\Log\Log;
 
 Log::config('default', [
-    'engine'=>'File'
-    ]);
+    'engine' => 'File'
+]);

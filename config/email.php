@@ -6,15 +6,15 @@
 use Origin\Mailer\Email;
 
 Email::config('default', [
-        'host' => 'localhost',
-        'port' => 465,
-        'username' => 'email@gmail.com',
-        'password' => 'secret',
-        'timeout' => 30,
-        'ssl' => true,
-        'tls' => false
-        ]);
+    'host' => env('EMAIL_HOST'),
+    'port' => env('EMAIL_PORT'),
+    'username' => env('EMAIL_USERNAME'),
+    'password' => env('EMAIL_PASSWORD'),
+    'timeout' => 30,
+    'ssl' => env('EMAIL_SSL'),
+    'tls' => env('EMAIL_TLS'),
+]);
 
 Email::config('test', [
-    'debug' => true
-    ]);
+    'engine' => 'Test'
+]);

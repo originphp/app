@@ -11,7 +11,7 @@ ConnectionManager::config('default', [
     'database' => 'origin',
     'username' => env('DB_USERNAME'),
     'password' => env('DB_PASSWORD'),
-    'engine' => 'mysql'
+    'engine' => env('DB_ENGINE', 'mysql')
 ]);
 
 ConnectionManager::config('test', [
@@ -19,5 +19,5 @@ ConnectionManager::config('test', [
     'database' => 'origin_test',
     'username' => env('DB_USERNAME'),
     'password' => env('DB_PASSWORD'),
-    'engine' => 'mysql'
+    'engine' => env('DB_ENGINE', 'mysql')
 ]);

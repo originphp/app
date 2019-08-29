@@ -16,8 +16,8 @@
  * Here you can configure your routes, the order which they are added is important.
  * The first match route will be used.
  */
-use Origin\Http\Router;
 use Origin\Core\Plugin;
+use Origin\Http\Router;
 
 /*
 * Add your routes here
@@ -33,7 +33,7 @@ use Origin\Core\Plugin;
 */
 
 Router::add('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
-Router::add('/pages/*', ['controller'=>'Pages','action'=>'display']);
+Router::add('/pages/*', ['controller' => 'Pages','action' => 'display']);
 
 /*
 * Load the routes for plugins

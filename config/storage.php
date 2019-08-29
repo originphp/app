@@ -7,5 +7,5 @@
 use Origin\Storage\Storage;
 
 Storage::config('default', [
-        'engine' => 'Local'
-    ]);
+    'engine' => 'Local'
+]);
