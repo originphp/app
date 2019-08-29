@@ -19,13 +19,20 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+## [2.0.0] - 2019-08-29
+
+## Changed
+- Reverting from using src to app folder as this makes development easier
+- db folder is now database, and migrate is migrations
+- It comes with configured to use .env file
+
 ## [1.15.0] - 2019-08-28
 ### Added
 - AppMailer
 - mailer layout
 
 ### Removed
-- legacy autoloader.php
+- removed legacy autoloader.php
 
 ## [1.14.0] - 2019-08-26
 ### Added

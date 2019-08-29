@@ -6,11 +6,10 @@ use Origin\Mailer\Mailer;
 class AppMailer extends Mailer
 {
     public $defaults = [
-        'from' => ['phpunit07@gmail.com' => 'PHP Unit'],
+        'from' => ['no-reply@example.com' => 'Web Application'],
     ];
 
-    //
-    public $layout = false;
+    public $layout = 'mailer';
 
     public $account = 'default';
 }

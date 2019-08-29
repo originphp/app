@@ -5,7 +5,7 @@ $autoloader = Autoloader::instance();
 $autoloader->directory(ROOT);
 
 $namespaces = [
-    'App' => 'src',
+    'App' => 'app',
     'App\\Test' => 'tests',
     'Origin' => 'origin/src',
     'Origin\\Test' => 'origin/tests'
