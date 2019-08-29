@@ -62,6 +62,15 @@
       }
       ?>
 
+     <?php
+        $env = CONFIG.DS.'.env.php';
+        if (file_exists($env)) {
+            success("{$env} found");
+        } else {
+            warning("{$env} not found");
+        }
+      ?>
+
       <?php
         $databaseConfig = CONFIG.DS.'database.php';
         use Origin\Model\ConnectionManager;
@@ -71,7 +80,7 @@
                 $db = ConnectionManager::get('default');
                 success('Connected to database.');
             } catch (\Exception $e) {
-                warning('Unable to connect to the database. Please check the configuration and that the database exists.');
+                warning('Unable to connect to the database.');
             }
         }
       ?>

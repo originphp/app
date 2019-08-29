@@ -1,4 +1,5 @@
 <?php
+use Origin\Core\Plugin;
 use Origin\Core\Autoloader;
 
 $autoloader = Autoloader::instance();
@@ -15,3 +16,14 @@ $autoloader->addNamespaces($namespaces);
 $autoloader->register();
 
 require 'application.php';
+
+/*
+ * Load your plugins here
+ * use Origin\Core\Plugin
+ * @example Plugin::load('ContactManager');
+ */
+
+/*
+ * Initialize the plugins
+ */
+Plugin::initialize();
