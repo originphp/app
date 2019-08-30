@@ -19,12 +19,12 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
-## [2.0.0] - 2019-08-29
+## [2.0.0] - 2019-08-30
 
 ## Changed
 - Reverting from using src to app folder as this makes development easier
 - db folder is now database, and migrate is migrations
-- It comes with configured to use .env file
+- It comes with configured to use .env.php file
 
 ## [1.15.0] - 2019-08-28
 ### Added
