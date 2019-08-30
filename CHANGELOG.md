@@ -19,6 +19,11 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+
+## [2.1.0] - 2019-08-30
+### Added
+- Composer post install script to copy default .env.php file
+
 ## [2.0.0] - 2019-08-30
 
 ## Changed

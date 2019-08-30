@@ -20,5 +20,10 @@
     "phpseclib/phpseclib": "To use the SFTP Storage Engine",
     "php-memcached": "To use the Memcached Cache engine",
     "phpunit/phpunit": "To use the testing locally. "
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "@php -r \"copy('config' . DIRECTORY_SEPARATOR . '.env.php.default', 'config' . DIRECTORY_SEPARATOR . '.env.php');\""
+    ]
   }
 }
