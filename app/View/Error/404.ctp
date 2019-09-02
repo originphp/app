@@ -37,7 +37,7 @@
     <div class="block col-md-12 text-center">
       <span class="display-1 d-block">404</span>
       <div class="mb-4 lead">
-        <p>The page you are looking for was not found.
+        <p>The page you are looking for was not found.</p>
       </div>
     </div>
   </div>

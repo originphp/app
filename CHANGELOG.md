@@ -19,6 +19,12 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+## [2.2.0] - 2019-09-02
+### Added
+- Addded 400 error template
+
+### Fixed
+- Added missing closing p tag in error template
 
 ## [2.1.0] - 2019-08-30
 ### Added
