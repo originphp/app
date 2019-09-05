@@ -3,7 +3,7 @@ use Origin\Model\Schema;
 
 class QueueSchema extends Schema
 {
-    const VERSION = 20190826100000;
+    const VERSION = 20190905100000;
 
     /**
      * Schema
@@ -28,6 +28,6 @@ class QueueSchema extends Schema
             'queue_index' => ['type' => 'index', 'column' => 'queue'],
             'scheduled_index' => ['type' => 'index', 'column' => 'scheduled'],
         ],
-        'options' => ['engine' => 'InnoDB', 'collation' => 'utf8mb4_0900_ai_ci','autoIncrement' => 1000],
+        'options' => ['engine' => 'InnoDB', 'autoIncrement' => 1000],
     ];
 }

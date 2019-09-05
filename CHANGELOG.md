@@ -19,6 +19,14 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+## [2.2.2] - 2019-09-05
+### Fixed
+- Fixed collation errors on MySQL 5.x. Removed so that schema is more flexible.
+
+## [2.2.1] - 2019-09-04
+### Fixed
+- phpunit.xml to app directory (caused in 2.0.0)
+
 ## [2.2.0] - 2019-09-02
 ### Added
 - Addded 400 error template

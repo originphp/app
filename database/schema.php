@@ -28,7 +28,7 @@ class ApplicationSchema extends Schema
         'indexes' => [
             'user_id' => ['type' => 'index', 'column' => 'user_id'],
         ],
-        'options' => ['engine' => 'InnoDB', 'collation' => 'utf8mb4_0900_ai_ci'],
+        'options' => ['engine' => 'InnoDB', 'autoIncrement' => 1000],
     ];
     */
 }
