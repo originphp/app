@@ -19,6 +19,10 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+## [2.2.3] - 2019-09-10
+### Fixed 
+- Fixed comment in AppModel
+
 ## [2.2.2] - 2019-09-05
 ### Fixed
 - Fixed collation errors on MySQL 5.x. Removed so that schema is more flexible.
