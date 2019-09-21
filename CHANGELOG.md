@@ -19,6 +19,9 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+## [2.2.4] - 2019-09-21
+- Fixed CSS navbar hover color
+
 ## [2.2.3] - 2019-09-10
 ### Fixed 
 - Fixed comment in AppModel

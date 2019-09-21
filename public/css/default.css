@@ -21,6 +21,12 @@ main {
 .origin-navbar  .navbar-brand {
   color:#fff;
 }
+.origin-navbar .nav-item a:hover {
+  color:#212529;
+}
+.origin-navbar a.dropdown-item,.origin-navbar a.dropdown-item:hover {
+  color:#212529;
+}
 /**
  * Form Error handling
  */
