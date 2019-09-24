@@ -5,6 +5,7 @@ namespace App\Model;
 use Origin\Model\Model;
 use Origin\Model\Entity;
 use ArrayObject;
+use Exception;
 
 class AppModel extends Model
 {
@@ -158,7 +159,7 @@ class AppModel extends Model
     *
     * @param \Origin\Model\Entity $entity
     * @param ArrayObject $options
-    * @return bool
+    * @return void
     */
     public function afterCommit(Entity $entity, ArrayObject $options) : void
     {
@@ -170,7 +171,7 @@ class AppModel extends Model
      * @param \Exception $exception
      * @return void
      */
-    public function onError(\Exception $exception) : void
+    public function onError(Exception $exception) : void
     {
     }
 
