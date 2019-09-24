@@ -7,7 +7,7 @@ use Origin\Model\Entity;
 use ArrayObject;
 use Exception;
 
-class AppModel extends Model
+class ApplicationModel extends Model
 {
     public function initialize(array $config)
     {

@@ -9,7 +9,7 @@ use Origin\I18n\I18n;
  * @property \Origin\Controller\Component\CookieComponent $Cookie
  * @property \Origin\Controller\Component\AuthComponent $Auth
  */
-class AppController extends Controller
+class ApplicationController extends Controller
 {
     /**
      * This is called immediately after construct, so you don't have
