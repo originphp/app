@@ -6,14 +6,14 @@
   "license": "MIT",
   "require": {
     "php": "^7.2.0",
+    "originphp/framework": "^1.30",
     "ext-json": "*",
     "ext-mbstring": "*",
     "ext-openssl": "*",
-    "ext-intl": "*",
-    "originphp/framework": "*"
+    "ext-intl": "*"
   },
   "require-dev": {
-    "originphp/debug-plugin": "*"
+    "originphp/debug-plugin": "^1.*"
   },
   "suggest": {
     "ext-curl": "To use the HTTP utility",

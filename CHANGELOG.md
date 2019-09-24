@@ -19,7 +19,12 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+## [2.2.5] - 2019-09-24
+### Changed
+- Changed composer.json to update non breaking changes
+
 ## [2.2.4] - 2019-09-21
+### Fixed
 - Fixed CSS navbar hover color
 
 ## [2.2.3] - 2019-09-10
