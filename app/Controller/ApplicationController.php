@@ -17,26 +17,6 @@ class ApplicationController extends Controller
      */
     public function initialize()
     {
-        parent::initialize();
-
-        /**
-         * Core components to be loaded by default.
-         */
-        $this->loadComponent('Session');
-        $this->loadComponent('Cookie');
-        $this->loadComponent('Flash');
-
-        /**
-         * Load Core Helpers (Helpers will be lazy loaded)
-         */
-        $this->loadHelper('Session');
-        $this->loadHelper('Cookie');
-        $this->loadHelper('Flash');
-        $this->loadHelper('Html');
-        $this->loadHelper('Form');
-        $this->loadHelper('Number');
-        $this->loadHelper('Date');
-
         /**
          * Configure your locale settings here. OriginPHP ships with en_US and en_GB locales
          * by default. For others you can run the following command and it will create the locale
