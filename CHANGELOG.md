@@ -19,6 +19,10 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+## [2.2.6] - 2019-09-25
+### Fixed
+- Fixed composer.json
+
 ## [2.2.5] - 2019-09-24
 ### Changed
 - Changed composer.json to update non breaking changes
@@ -229,4 +233,3 @@ Delete tag:   git tag -d <tag_name>
 ## [1.0.0] - xxxx-xx-xx
 ### Changed
 - Plugins moved to own repos
-
