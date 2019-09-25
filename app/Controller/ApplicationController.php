@@ -29,7 +29,7 @@ class ApplicationController extends Controller
     /**
      * This is called before the controller action is executed but after initialize.
      */
-    public function beforeFilter()
+    public function beforeAction()
     {
     }
 
@@ -45,7 +45,7 @@ class ApplicationController extends Controller
      * This is called after the controller action is executed, and view has been rendered
      * but before it has been sent to the client.
      */
-    public function afterFilter()
+    public function afterAction()
     {
     }
 
