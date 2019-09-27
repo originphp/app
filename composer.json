@@ -6,20 +6,18 @@
   "license": "MIT",
   "require": {
     "php": "^7.2.0",
-    "originphp/framework": "^1.30",
-    "ext-json": "*",
-    "ext-mbstring": "*",
-    "ext-openssl": "*",
-    "ext-intl": "*"
+    "originphp/framework": "^1.30"
   },
   "require-dev": {
-    "originphp/debug-plugin": "^1.*"
+    "originphp/debug-plugin": "^1.0",
+    "phpunit/phpunit": "^8.0"
   },
-  "suggest": {
-    "ext-curl": "To use the HTTP utility",
-    "phpseclib/phpseclib": "To use the SFTP Storage Engine",
-    "php-memcached": "To use the Memcached Cache engine",
-    "phpunit/phpunit": "To use the testing locally. "
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "preferred-install": "dist",
+    "optimize-autoloader": true,
+    "sort-packages": true
   },
   "scripts": {
     "post-root-package-install": [
