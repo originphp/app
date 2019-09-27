@@ -6,10 +6,10 @@
   "license": "MIT",
   "require": {
     "php": "^7.2.0",
-    "originphp/framework": "^1.30"
+    "originphp/framework": "^2.0"
   },
   "require-dev": {
-    "originphp/debug-plugin": "^1.0",
+    "originphp/debug-plugin": "^1.4",
     "phpunit/phpunit": "^8.0"
   },
   "minimum-stability": "dev",

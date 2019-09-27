@@ -4,6 +4,7 @@ namespace App\Model;
 
 use Origin\Model\Model;
 use Origin\Model\Entity;
+use Origin\Model\Collection;
 use ArrayObject;
 use Exception;
 
@@ -14,8 +15,10 @@ class ApplicationModel extends Model
         $this->loadBehavior('Timestamp');
         $this->loadBehavior('Delocalize');
     }
-    # # # Callbacks  # # # 
-    // Delete these if you don't need them
+    
+    /**
+     * Remove these callbacks if you are not using, feel free to use them as a template.
+     */
 
     /**
      * Before find callback must return a bool. Returning false will stop the find operation.
@@ -31,11 +34,11 @@ class ApplicationModel extends Model
     /**
      * After find callback
      *
-     * @param mixed $results
+     * @param \Origin\Model\Collection $results
      * @param ArrayObject $options
      * @return void
      */
-    public function afterFind($results, ArrayObject $options) : void
+    public function afterFind(Collection $results, ArrayObject $options) : void
     {
     }
 
