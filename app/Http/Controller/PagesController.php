@@ -1,5 +1,5 @@
 <?php
-namespace App\Controller;
+namespace App\Http\Controller;
 
 /**
  * This is an optional controller for serving static page content. For example
@@ -7,7 +7,7 @@ namespace App\Controller;
  *
  *  Router::add('/pages/*', ['controller'=>'Pages','action'=>'display']);
  */
-use App\Controller\ApplicationController;
+use App\Http\Controller\ApplicationController;
 
 class PagesController extends ApplicationController
 {
