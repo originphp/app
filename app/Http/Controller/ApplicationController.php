@@ -1,13 +1,13 @@
 <?php
-namespace App\Controller;
+namespace App\Http\Controller;
 
-use Origin\Controller\Controller;
+use Origin\Http\Controller\Controller;
 use Origin\I18n\I18n;
 
 /**
- * @property \Origin\Controller\Component\SessionComponent $Session
- * @property \Origin\Controller\Component\CookieComponent $Cookie
- * @property \Origin\Controller\Component\AuthComponent $Auth
+ * @property \Origin\Http\Controller\Component\SessionComponent $Session
+ * @property \Origin\Http\Controller\Component\CookieComponent $Cookie
+ * @property \Origin\Http\Controller\Component\AuthComponent $Auth
  */
 class ApplicationController extends Controller
 {

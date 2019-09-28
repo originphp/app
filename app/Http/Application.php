@@ -3,7 +3,7 @@
  * Application
  * Configure any middleware here
  */
-namespace App;
+namespace App\Http;
 
 use Origin\Http\BaseApplication;
 
