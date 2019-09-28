@@ -15,7 +15,7 @@ class ApplicationController extends Controller
      * This is called immediately after construct, so you don't have
      * to overload it. Load and configure components, helpers etc.
      */
-    public function initialize()
+    public function initialize() : void
     {
         /**
          * Configure your locale settings here. OriginPHP ships with en_US and en_GB locales

@@ -10,7 +10,7 @@ use Exception;
 
 class ApplicationModel extends Model
 {
-    public function initialize(array $config)
+    public function initialize(array $config) : void
     {
         $this->loadBehavior('Timestamp');
         $this->loadBehavior('Delocalize');
