@@ -21,7 +21,7 @@
   },
   "scripts": {
     "post-root-package-install": [
-      "@php -r \"copy('config' . DIRECTORY_SEPARATOR . '.env.php.default', 'config' . DIRECTORY_SEPARATOR . '.env.php');\""
+      "@php bin/install"
     ]
   }
 }
