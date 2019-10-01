@@ -9,7 +9,7 @@ class ApplicationMailer extends Mailer
         'from' => ['no-reply@example.com' => 'Web Application'],
     ];
 
-    public $layout = 'mailer';
+    public $layout = 'default';
 
     public $account = 'default';
 }
