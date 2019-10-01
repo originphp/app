@@ -13,20 +13,23 @@
  * @license      https://opensource.org/licenses/mit-license.php MIT License
  */
 
-require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'vendor'. DIRECTORY_SEPARATOR .'originphp'. DIRECTORY_SEPARATOR .'framework'. DIRECTORY_SEPARATOR .'src'. DIRECTORY_SEPARATOR .'bootstrap.php';
+require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'originphp' . DIRECTORY_SEPARATOR . 'framework' . DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR . 'bootstrap.php';
+
 use Origin\Console\ConsoleApplication;
 
 $app = new ConsoleApplication();
 $app->name('db');
 $app->description([
- 'Db tools wrapped up here to demonstrate the Console Application functionality'
+    'OriginPHP Database Commands'
 ]);
-$app->addCommand('create', 'DbCreate'); 
-$app->addCommand('drop', 'DbDrop'); 
+$app->addCommand('create', 'DbCreate');
+$app->addCommand('drop', 'DbDrop');
 $app->addCommand('setup', 'DbSetup');
-$app->addCommand('reset', 'DbReset');  
+$app->addCommand('reset', 'DbReset');
 $app->addCommand('seed', 'DbSeed');
-$app->addCommand('migrate', 'DbMigrate');  
-$app->addCommand('schema-load', 'DbSchemaLoad'); 
-$app->addCommand('schema-dump', 'DbSchemaDump'); 
+$app->addCommand('migrate', 'DbMigrate');
+$app->addCommand('rollback', 'DbRollback');
+$app->addCommand('schema-load', 'DbSchemaLoad');
+$app->addCommand('schema-dump', 'DbSchemaDump');
+
 $app->run();
