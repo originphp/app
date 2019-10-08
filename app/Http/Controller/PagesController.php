@@ -7,7 +7,6 @@ namespace App\Http\Controller;
  *
  *  Router::add('/pages/*', ['controller'=>'Pages','action'=>'display']);
  */
-use App\Http\Controller\ApplicationController;
 
 class PagesController extends ApplicationController
 {
@@ -18,7 +17,7 @@ class PagesController extends ApplicationController
         $args = func_get_args();
     
         $count = count($args);
-        if (!$count) {
+        if (! $count) {
             return $this->redirect('/');
         }
    
