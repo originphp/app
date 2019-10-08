@@ -5,11 +5,11 @@ use Origin\Mailer\Mailer;
 
 class ApplicationMailer extends Mailer
 {
-    public $defaults = [
+    protected $defaults = [
         'from' => ['no-reply@example.com' => 'Web Application'],
     ];
 
-    public $layout = 'default';
+    protected $layout = 'default';
 
-    public $account = 'default';
+    protected $account = 'default';
 }

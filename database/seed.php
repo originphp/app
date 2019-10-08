@@ -6,7 +6,7 @@ class ApplicationSeed extends Seed
     /**
        * Create a property for each table, the name should be the same as the table name
        *
-       * public $bookmarks = [
+       * protected $bookmarks = [
        *   [
        *      'id' => 1000,
        *      'title' => 'Article Title',
