@@ -29,7 +29,7 @@ class ApplicationController extends Controller
     /**
      * This is called before the controller action is executed but after initialize.
      */
-    public function startup()
+    public function startup() : void
     {
     }
 
@@ -37,7 +37,7 @@ class ApplicationController extends Controller
      * This is called after the controller action is executed, and view has been rendered
      * but before it has been sent to the client.
      */
-    public function shutdown()
+    public function shutdown() : void
     {
     }
 }
