@@ -12,4 +12,9 @@
  * @link         https://www.originphp.com
  * @license      https://opensource.org/licenses/mit-license.php MIT License
  */
-include dirname(__DIR__) . DIRECTORY_SEPARATOR . 'vendor'. DIRECTORY_SEPARATOR .'originphp'. DIRECTORY_SEPARATOR .'framework'. DIRECTORY_SEPARATOR .'src'. DIRECTORY_SEPARATOR . 'Console' . DIRECTORY_SEPARATOR . 'console.php';
+
+namespace App\Console;
+
+require dirname(__DIR__) .  '/config/bootstrap.php';
+
+(new Application())->dispatch($argv);
