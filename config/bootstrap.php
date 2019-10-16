@@ -30,7 +30,7 @@ require __DIR__ . '/routes.php';
  * use Origin\Core\Plugin
  * @example Plugin::load('ContactManager');
  */
-Plugin::load('Generate');
+
 /*
  * Initialize the plugins
  */

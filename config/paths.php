@@ -1,7 +1,7 @@
 <?php
 /**
  * Constants for file paths are configured here
- * DS is kept for backwards comptability.
+ * DS is kept for backwards comptability and testing.
  */
 if (! defined('DS')) {
     define('DS', DIRECTORY_SEPARATOR);
