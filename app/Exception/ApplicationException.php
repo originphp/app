@@ -1,7 +1,7 @@
 <?php
 namespace App\Exception;
 
-use Origin\Exception\Exception;
+use Origin\Core\Exception\Exception;
 
 class ApplicationException extends Exception
 {

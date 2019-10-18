@@ -32,4 +32,4 @@ $app->addCommand('rollback', 'DbRollback');
 $app->addCommand('schema-load', 'DbSchemaLoad');
 $app->addCommand('schema-dump', 'DbSchemaDump');
 
-$app->run();
+exit($app->run());

@@ -16,7 +16,7 @@
 require dirname(__DIR__) .  '/config/bootstrap.php';
 
 use Origin\Console\ConsoleApplication;
-use Origin\Console\Command\Extra\InstallCommand;
+use App\Console\Command\InstallCommand;
 
 $app = new ConsoleApplication();
 $app->name('install');
@@ -24,4 +24,4 @@ $app->description([
     'Post install command'
 ]);
 $app->addCommand('install', InstallCommand::class);
-$app->run();
+exit($app->run());

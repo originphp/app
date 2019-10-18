@@ -12,7 +12,7 @@
 #
 FROM ubuntu:18.04
 LABEL maintainer="Jamiel Sharief"
-LABEL version="1.0.0"
+LABEL version="1.1.0"
 
 # Setup Enviroment
 
@@ -35,7 +35,6 @@ RUN apt-get update && apt-get install -y \
     apache2 \
     libapache2-mod-php \
     php \
-    php-cli \
     php-apcu \
     php-cli \
     php-common \

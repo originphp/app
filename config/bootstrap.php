@@ -10,19 +10,17 @@ $autoloader->directory(ROOT);
 
 $autoloader->addNamespaces([
     'App' => 'app',
-    'App\\Test' => 'tests',
-    'Origin' => 'origin/src',
-    'Origin\\Test' => 'origin/tests'
+    'App\\Test' => 'tests'
 ]);
 $autoloader->register();
 
-include __DIR__ . '/application.php';
-include __DIR__ . '/log.php';
-include __DIR__ . '/cache.php';
-include __DIR__ . '/database.php';
-include __DIR__ . '/storage.php';
-include __DIR__ . '/email.php';
-include __DIR__ . '/queue.php';
+require __DIR__ . '/application.php';
+require __DIR__ . '/log.php';
+require __DIR__ . '/cache.php';
+require __DIR__ . '/database.php';
+require __DIR__ . '/storage.php';
+require __DIR__ . '/email.php';
+require __DIR__ . '/queue.php';
 require __DIR__ . '/routes.php';
 
 /*

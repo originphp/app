@@ -7,6 +7,7 @@
   "require": {
     "php": "^7.2.0",
     "originphp/framework": "^2.0",
+    "originphp/commands": "^1.0",
     "originphp/cache": "^1.0",
     "originphp/log": "^1.0",
     "originphp/storage": "^1.0"
