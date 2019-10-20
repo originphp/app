@@ -9,7 +9,7 @@ class InstallCommand extends Command
     protected $name = 'install';
     protected $description = 'Post install command';
  
-    public function execute() : void
+    protected function execute() : void
     {
         $source = ROOT . '/config/.env.php.default';
         $destination = ROOT.  '/config/.env.php';
