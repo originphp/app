@@ -9,5 +9,5 @@ use Origin\Storage\Storage;
 
 Storage::config('default', [
     'engine' => 'Local',
-    'path' => ROOT . '/storage'
+    'root' => ROOT . '/storage'
 ]);
