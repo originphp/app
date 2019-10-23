@@ -8,7 +8,7 @@ use Origin\Cache\Cache;
 
 Cache::config('default', [
     'engine' => 'File',
-    'path' => ROOT . '/tmp/cache',
+    'path' => CACHE,
     'duration' => '+60 minutes', // string or number of seconds e.g. 3600,
     'prefix' => 'cache_',
     'serialize' => true // set to false if you going to cache strings such as output
