@@ -21,7 +21,7 @@ require __DIR__ . '/database.php';
 require __DIR__ . '/storage.php';
 require __DIR__ . '/email.php';
 require __DIR__ . '/queue.php';
-require __DIR__ . '/routes.php';
+
 
 /*
  * Load your plugins here
@@ -30,6 +30,11 @@ require __DIR__ . '/routes.php';
  */
 
 /*
- * Initialize the plugins
+ * Initialize plugins
  */
 Plugin::initialize();
+
+/**
+ * Load the routes after plugins have been loaded
+ */
+require CONFIG . '/routes.php';
