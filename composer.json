@@ -13,7 +13,7 @@
     "originphp/storage": "^1.0"
   },
   "require-dev": {
-    "originphp/debug-plugin": "^1.4",
+    "originphp/debug-plugin": "^2.0",
     "originphp/generate": "^1.0",
     "phpunit/phpunit": "^8.0"
   },
