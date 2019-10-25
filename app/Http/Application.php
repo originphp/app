@@ -3,7 +3,7 @@
  * Application
  * Configure any middleware here
  */
-namespace App;
+namespace App\Http;
 
 use Origin\Http\BaseApplication;
 
@@ -17,7 +17,7 @@ class Application extends BaseApplication
      * $this->loadMiddleware('RequestModifier');
      * $this->loadMiddleware('MyPlugin.RequestModifier')
      */
-    public function initialize()
+    protected function initialize() : void
     {
         $this->loadMiddleware('CsrfProtection');
     }

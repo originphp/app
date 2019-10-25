@@ -14,14 +14,9 @@ Config::write('App.environment', env('APP_ENV'));
 
 Config::write('App.namespace', 'App');
 Config::write('App.encoding', 'UTF-8');
+Config::write('App.defaultTimezone', 'UTC');
 
 Config::write('Session.timeout', 3600);
-
-/**
- * Generate a random string such as md5(time()) and place
- * here. This is used by the Security:hash method.
- */
-Config::write('Security.pepper', '-----ORIGIN PHP-----');
 
 /**
  * Encryption key to use.

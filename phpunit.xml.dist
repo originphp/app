@@ -3,7 +3,7 @@
     colors="true"
     processIsolation="false"
     stopOnFailure="false"
-    bootstrap="./vendor/originphp/framework/src/bootstrap.php"
+    bootstrap="./config/bootstrap.php"
     backupGlobals="true"
     >
     <testsuites>

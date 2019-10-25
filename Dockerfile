@@ -12,7 +12,7 @@
 #
 FROM ubuntu:18.04
 LABEL maintainer="Jamiel Sharief"
-LABEL version="1.0.0"
+LABEL version="1.1.0"
 
 # Setup Enviroment
 
@@ -35,7 +35,6 @@ RUN apt-get update && apt-get install -y \
     apache2 \
     libapache2-mod-php \
     php \
-    php-cli \
     php-apcu \
     php-cli \
     php-common \
@@ -70,11 +69,6 @@ WORKDIR /var/www
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN composer install --no-interaction
-
-# Keep here for now (also as composer depency for code completion)
-RUN wget https://phar.phpunit.de/phpunit-7.phar
-RUN chmod +x phpunit-7.phar
-RUN mv phpunit-7.phar /usr/local/bin/phpunit
 
 # Install X-Debug for PHPUnit Code Coverage (Causes major Performance decrease when extension is enabled)
 RUN pecl install xdebug

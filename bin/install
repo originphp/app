@@ -13,9 +13,15 @@
  * @license      https://opensource.org/licenses/mit-license.php MIT License
  */
 
-namespace App\Console;
-
 require dirname(__DIR__) .  '/config/bootstrap.php';
 
-$exitCode = (new Application())->dispatch($argv);
-exit($exitCode);
+use Origin\Console\ConsoleApplication;
+use App\Console\Command\InstallCommand;
+
+$app = new ConsoleApplication();
+$app->name('install');
+$app->description([
+    'Post install command'
+]);
+$app->addCommand('install', InstallCommand::class);
+exit($app->run());

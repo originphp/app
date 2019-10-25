@@ -10,7 +10,7 @@ class ApplicationSchema extends Schema
      * @var array
      */
     /*
-    public $bookmarks = [
+    protected $bookmarks = [
         'columns' => [
             'id' => ['type' => 'integer', 'limit' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'autoIncrement' => true],
             'user_id' => ['type' => 'integer', 'limit' => 11, 'unsigned' => false, 'null' => false, 'default' => null],

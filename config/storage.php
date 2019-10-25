@@ -1,11 +1,13 @@
 <?php
+use Origin\Storage\Storage;
+
 /**
  * Storage Configuration
  * Engines are Local, Ftp, Sftp
  * @see https://www.originphp.com/docs/storage/
  */
-use Origin\Storage\Storage;
 
 Storage::config('default', [
-    'engine' => 'Local'
+    'engine' => 'Local',
+    'root' => ROOT . '/storage'
 ]);

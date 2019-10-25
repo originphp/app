@@ -1,29 +1,36 @@
 <?php
 /**
- * Front Controller.
+ * OriginPHP Framework
+ * Copyright 2018 - 2019 Jamiel Sharief.
+ *
+ * Licensed under The MIT License
+ * The above copyright notice and this permission notice shall be included in all copies or substantial
+ * portions of the Software.
+ *
+ * @copyright    Copyright (c) Jamiel Sharief
+ * @link         https://www.originphp.com
+ * @license      https://opensource.org/licenses/mit-license.php MIT License
  */
-define('START_TIME', microtime(true));
 
 /**
- * Start the Origin Bootstrap Process.
+ * Front Controller
  */
-require dirname(__DIR__) . DIRECTORY_SEPARATOR .'vendor'. DIRECTORY_SEPARATOR .'originphp'. DIRECTORY_SEPARATOR .'framework'. DIRECTORY_SEPARATOR .'src'. DIRECTORY_SEPARATOR .'bootstrap.php';
 
 /**
- * Mini router for static content on built in server
+ * Built-in PHP server router
  */
-if (php_sapi_name() == 'cli-server') {
+if (php_sapi_name() === 'cli-server') {
     $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-    if (file_exists(WEBROOT . $path) and is_file(WEBROOT . $path)) {
+    if (file_exists(__DIR__ . $path) and is_file(__DIR__ . $path)) {
         return false;
     }
 }
 
-use Origin\Http\Request;
-use Origin\Http\Response;
-use App\Application;
+/**
+ * Start Application bootstrap process
+ */
+require dirname(__DIR__) . '/config/bootstrap.php';
 
-$request = new Request();
-$response =  new Response();
-$Application = new Application($request, $response);
-$response->send();
+use App\Http\Application;
+
+(new Application())->dispatch()->send();

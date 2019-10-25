@@ -1,5 +1,5 @@
 <?php
-namespace App\Controller;
+namespace App\Http\Controller;
 
 /**
  * This is an optional controller for serving static page content. For example
@@ -7,18 +7,17 @@ namespace App\Controller;
  *
  *  Router::add('/pages/*', ['controller'=>'Pages','action'=>'display']);
  */
-use App\Controller\AppController;
 
-class PagesController extends AppController
+class PagesController extends ApplicationController
 {
-    public $layout = 'default';
+    protected $layout = 'default';
 
     public function display()
     {
         $args = func_get_args();
     
         $count = count($args);
-        if (!$count) {
+        if (! $count) {
             return $this->redirect('/');
         }
    
