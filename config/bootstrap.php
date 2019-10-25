@@ -1,4 +1,5 @@
 <?php
+use Origin\Core\Config;
 use Origin\Core\Plugin;
 use Origin\Core\Autoloader;
 
@@ -15,13 +16,16 @@ $autoloader->addNamespaces([
 $autoloader->register();
 
 require __DIR__ . '/application.php';
+
+mb_internal_encoding(Config::read('App.encoding'));
+date_default_timezone_set(Config::read('App.defaultTimezone'));
+
 require __DIR__ . '/log.php';
 require __DIR__ . '/cache.php';
 require __DIR__ . '/database.php';
 require __DIR__ . '/storage.php';
 require __DIR__ . '/email.php';
 require __DIR__ . '/queue.php';
-
 
 /*
  * Load your plugins here
