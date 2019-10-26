@@ -19,6 +19,15 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+
+## [3.0.1] - 2019-10-26
+### Fixed
+- Fixed bin/db command to work with Commands package
+
+## [3.0.0] - 2019-10-25
+
+Released new version with OriginPHP v2.0
+
 ## [2.2.6] - 2019-09-25
 ### Fixed
 - Fixed composer.json
