@@ -1,5 +1,5 @@
+node_modules/
 /composer.lock
-/node_modules
 /phpunit.xml
 /vendor
 .env
