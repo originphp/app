@@ -19,6 +19,8 @@ class Application extends BaseApplication
      */
     protected function initialize() : void
     {
-        $this->loadMiddleware('CsrfProtection');
+        $this->loadMiddleware('CsrfProtection', [
+            'httpOnly' => true,
+        ]);
     }
 }
