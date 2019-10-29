@@ -20,7 +20,7 @@ Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
 
-## [3.0.1] - 2019-10-26
+## [3.0.1] - 2019-10-29
 ### Fixed
 - Fixed bin/db command to work with Commands package
 
