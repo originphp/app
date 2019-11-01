@@ -20,6 +20,10 @@ Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
 
+## [3.1.0] - 2019-11-01
+### Added
+- Added Cache configuration for framework caching
+
 ## [3.0.1] - 2019-10-29
 ### Fixed
 - Fixed bin/db command to work with Commands package
