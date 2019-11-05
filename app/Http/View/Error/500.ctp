@@ -35,9 +35,9 @@
 <body>
   <div class="h-100 row align-items-center">
     <div class="block col-md-12 text-center">
-      <span class="display-1 d-block">500</span>
+      <span class="display-1 d-block"><?= $errorCode ?></span>
       <div class="mb-4 lead">
-        <p>An internal server error has occured.
+        <p><?= $errorMessage ?></p>
       </div>
     </div>
   </div>
