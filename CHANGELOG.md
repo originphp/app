@@ -20,6 +20,13 @@ Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
 
+## [3.2.0] - 2019-11-06
+### Added
+- Added default Favicon using Fontawesome
+
+### Changed
+- 500 template adjusted to use dynamic vars
+
 ## [3.1.0] - 2019-11-01
 ### Added
 - Added Cache configuration for framework caching
