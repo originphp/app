@@ -12,7 +12,7 @@
 #
 FROM ubuntu:18.04
 LABEL maintainer="Jamiel Sharief"
-LABEL version="1.1.0"
+LABEL version="1.2.0"
 
 # Setup Enviroment
 
@@ -42,6 +42,7 @@ RUN apt-get update && apt-get install -y \
     php-imap \
     php-intl \
     php-json \
+    php-mailparse \
     php-mbstring \
     php-mysql \
     php-opcache \

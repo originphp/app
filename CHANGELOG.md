@@ -19,6 +19,13 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
+## [3.3.0] - 2019-11-22
+### Added
+- Mailbox configuration 
+- Mailbox fixtures
+
+### Changed
+- Added mailparse extension to Dockerfile
 
 ## [3.2.0] - 2019-11-06
 ### Added

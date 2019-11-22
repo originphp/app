@@ -36,6 +36,7 @@ require __DIR__ . '/database.php';
 require __DIR__ . '/storage.php';
 require __DIR__ . '/email.php';
 require __DIR__ . '/queue.php';
+require __DIR__ . '/mailbox.php';
 
 /*
  * Load your plugins here

@@ -5,7 +5,8 @@ use Origin\Core\Config;
  * Set configuration vars here
  * @example
  * Config::write('Stripe.secret', env('STRIPE_SECRET'));
- * then in your app $secret = Config::read('Stripe.secret');
+ * then in your app :
+ * $secret = Config::read('Stripe.secret');
  */
 Config::write('debug', env('APP_DEBUG', true));
 
@@ -18,13 +19,11 @@ Config::write('App.defaultTimezone', 'UTC');
 
 Config::write('Session.timeout', 3600);
 
-/**
- * Encryption key to use.
- */
+# Encryption key to use.
 Config::write('Security.key', env('APP_KEY'));
 
-/*
- * This is the default schema format to be used. This is used
- * by db commands setup/reset/load etc.
- */
+# strtotime comptabible string
+Config::write('Mailbox.keepEmails', '+30 days');
+
+# default schema format used by db commands setup/reset/load etc.
 Config::write('Schema.format', 'php');
