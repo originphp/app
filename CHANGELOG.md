@@ -19,7 +19,8 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
-## [4.0.0] - 2020-05-02
+
+## [3.4.0] - 2020-05-02
 ### Changed
 - Changed Dockerfile to use Ubuntu 20.04/PHP 7.4
 
