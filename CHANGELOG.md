@@ -20,6 +20,15 @@ Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
 
+## [3.5.0] - 2020-05-16
+
+### Added
+- Added Bootstrap dist
+- Added Jquery dist
+
+### Changed
+- Updated normalize version
+
 ## [3.4.0] - 2020-05-02
 ### Changed
 - Changed Dockerfile to use Ubuntu 20.04/PHP 7.4
