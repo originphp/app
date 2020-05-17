@@ -4,9 +4,11 @@
  * Engines include File,Console,Email and Syslog
  * @see https://www.originphp.com/docs/log/
  */
+
+use Origin\Log\Engine\FileEngine;
 use Origin\Log\Log;
 
 Log::config('default', [
-    'engine' => 'File',
+    'className' => FileEngine::class,
     'file' => LOGS . '/application.log'
 ]);

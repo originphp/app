@@ -1,4 +1,6 @@
 <?php
+
+use Origin\Storage\Engine\LocalEngine;
 use Origin\Storage\Storage;
 
 /**
@@ -8,6 +10,6 @@ use Origin\Storage\Storage;
  */
 
 Storage::config('default', [
-    'engine' => 'Local',
+    'className' => LocalEngine::class,
     'root' => ROOT . '/storage'
 ]);
