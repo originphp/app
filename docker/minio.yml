@@ -1,0 +1,12 @@
+version: "2.1"
+services:
+  minio:
+    image: minio/minio:RELEASE.2020-05-16T01-33-21Z
+    volumes:
+      - ./storage:/data
+    ports:
+      - "9000:9000"
+    environment:
+      MINIO_ACCESS_KEY: minio
+      MINIO_SECRET_KEY: b1816172fd2ba98f3af520ef572e3a47
+    command: server /data

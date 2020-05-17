@@ -52,6 +52,9 @@ RUN apt-get update && apt-get install -y \
     php-xml \
     php-zip \
     php-dev \
+    postgresql-client \
+    php-pgsql \
+    php-memcached \
  && rm -rf /var/lib/apt/lists/*
 
 # Setup Web Server
@@ -63,7 +66,7 @@ COPY . /var/www
 RUN chown -R www-data:www-data /var/www
 RUN chmod -R 0775 /var/www
 
-ADD apache.conf /etc/apache2/sites-enabled/000-default.conf
+ADD docker/apache.conf /etc/apache2/sites-enabled/000-default.conf
 
 WORKDIR /var/www
 
@@ -82,5 +85,9 @@ RUN pecl install xdebug
 # echo 'xdebug.default_enable=0' >> /etc/php/7.4/cli/php.ini
 
 RUN echo 'apc.enable_cli=1' >>  /etc/php/7.4/cli/php.ini
+
+RUN pecl install redis
+RUN echo 'extension=redis.so' >> /etc/php/7.4/cli/php.ini
+RUN echo 'extension=redis.so' >> /etc/php/7.4/apache2/php.ini
 
 CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]

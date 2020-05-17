@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+# OriginPHP Framework
+# Copyright 2018 - 2020 Jamiel Sharief.
+#
+# Licensed under The MIT License
+# The above copyright notice and this permission notice shall be included in all copies or substantial
+# portions of the Software.
+#
+# @copyright    Copyright (c) Jamiel Sharief
+# @link          https://www.originphp.com
+# @license      https://opensource.org/licenses/mit-license.php MIT License
+#
+# Instructions:
+# 
+#   run this from root for example
+#   $ bin/docker
+# 
+# You can remove or add any services you want.
+#
+# If you run into issues e.g. error while removing network, with contianers not closing down run docker-compose down --remove-orphans
+#
+#
+
+docker-compose -f docker-compose.yml -f docker/mysql.yml -f docker/redis.yml -f docker/minio.yml -f docker/mailhog.yml up

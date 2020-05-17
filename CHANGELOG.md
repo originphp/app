@@ -20,6 +20,25 @@ Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
 
+### Added
+
+- Added bin/docker bash script
+- Added Elasticsearch docker service
+- Added Mailhog docker service
+- Added Memached docker service
+- Added Postgresql docker service
+- Added MySQL docker service
+- Added Redis docker service
+
+### Changed
+
+- Changed Docker MySQL port to 3307
+
+### Removed
+
+- Removed MySQL from default docker-compose
+
+
 ## [3.5.0] - 2020-05-16
 
 ### Added
