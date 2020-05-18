@@ -22,14 +22,28 @@ $ docker-compose build
 
 The container only needs to be built once, after this you will use the up and down commands to start and stop the docker container.
 
+If you just want a web server then run the `docker-compose` command
+
 ```linux
 $ docker-compose up
 ```
 
 Then you will now be able to access your app at [http://localhost:8000/](http://localhost:8000/).
 
+If you want to start the docker container with extra services such as database and caching, then run the script
+
+```linux
+$ bin/docker
+```
+
+Customise it to add/remove or change the services that you need.
+
+
+
 To shutdown the container
 
 ```linux
 $ docker-compose down
 ```
+
+> Sometimes when running many servers you might some errors, simple run `docker-compose down --remove-orphans` this solve problems.
