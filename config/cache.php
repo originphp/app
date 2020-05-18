@@ -23,7 +23,7 @@ Cache::config('default', [
  * then  clear this cache.
  */
 Cache::config('origin', [
-    'engine' => FileEngine::class,
+    'className' => FileEngine::class,
     'path' => CACHE . '/origin',
     'duration' => Config::read('debug') ? '+2 minutes' : '+24 hours',
     'prefix' => 'cache_',
