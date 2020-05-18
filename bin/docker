@@ -11,15 +11,19 @@
 # @link          https://www.originphp.com
 # @license      https://opensource.org/licenses/mit-license.php MIT License
 #
-# Instructions:
+# This loads all the services for docker, you can add or remove by editing the line that starts with export.
+# Use CTRL - C to shutdown (if not you will have to use docker-down --remove-orphans )
 # 
-#   run this from root for example
-#   $ bin/docker
-# 
-# You can remove or add any services you want.
+# For example if you prefered to use postgreSQL instead
+# export COMPOSE_FILE=docker-compose.yml:docker/postgres.yml:docker/redis.yml:docker/minio.yml:docker/mailhog.yml
 #
-# If you run into issues e.g. error while removing network, with contianers not closing down run docker-compose down --remove-orphans
-#
-#
+trap shutdown INT
 
-docker-compose -f docker-compose.yml -f docker/mysql.yml -f docker/redis.yml -f docker/minio.yml -f docker/mailhog.yml up
+function shutdown() {
+        docker-compose down
+        unset COMPOSE_FILE
+}
+
+export COMPOSE_FILE=docker-compose.yml:docker/mysql.yml:docker/redis.yml:docker/minio.yml:docker/mailhog.yml
+project_name=$(basename `pwd`)
+docker-compose -p $project_name up
