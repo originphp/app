@@ -15,16 +15,6 @@ $autoloader->addNamespaces([
 ]);
 $autoloader->register();
 
-/**
- * Load environment vars
- */
-if (file_exists(__DIR__ . '/.env.php')) {
-    $result = require __DIR__ . '/.env.php';
-    foreach ($result as $key => $value) {
-        $_ENV[$key] = $value;
-    }
-}
-
 require __DIR__ . '/application.php';
 
 mb_internal_encoding(Config::read('App.encoding'));
