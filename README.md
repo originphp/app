@@ -36,14 +36,6 @@ If you want to start the docker container with extra services such as database a
 $ bin/docker
 ```
 
-Customise it to add/remove or change the services that you need.
+You can add or remove docker services by editing the script file directly.
 
-
-
-To shutdown the container
-
-```linux
-$ docker-compose down
-```
-
-> Sometimes when running many servers you might some errors, simple run `docker-compose down --remove-orphans` this solve problems.
+To shutdown the containers hit `ctrl-c`
