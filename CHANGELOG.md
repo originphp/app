@@ -18,7 +18,6 @@ Create:       git tag -a <tag_name> -m '<tag_message>'
 Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
-## [Unreleased]
 ## [3.6.0] - 2020-05-19
 
 ### Added
@@ -43,6 +42,7 @@ Delete tag:   git tag -d <tag_name>
 - Changed config/log to array
 - Changed config/mailbox to array
 - Changed config/storage to array
+- Changed default application name to `application`
 
 ### Removed
 
