@@ -19,7 +19,7 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [Unreleased]
-## [3.5.0] - 2020-05-16
+## [3.6.0] - 2020-05-19
 
 ### Added
 
@@ -31,10 +31,18 @@ Delete tag:   git tag -d <tag_name>
 - Added Postgresql docker service
 - Added MySQL docker service
 - Added Redis docker service
+- Added Postwoman docker service
 
 ### Changed
 
 - Changed Docker MySQL port to 3307
+- Changed config/app to array
+- Changed config/cache to array
+- Changed config/database to array
+- Changed config/email to array
+- Changed config/log to array
+- Changed config/mailbox to array
+- Changed config/storage to array
 
 ### Removed
 
