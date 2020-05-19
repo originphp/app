@@ -5,8 +5,8 @@ use Origin\Security\Security;
 use Origin\Console\Command\Command;
 
 /**
- * This command be used even when deploying to other servers.
- * You can also customise as you set fit.
+ * This command is used when a new project is created and you can use this
+ * when deploying to a new server, customise this as you see fit.
  */
 class InstallCommand extends Command
 {
