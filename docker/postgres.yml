@@ -14,7 +14,6 @@ services:
     volumes:
       - pg-data:/var/lib/postgresql/data
     environment:
-      POSTGRES_DB: application
       POSTGRES_USER: root
       POSTGRES_PASSWORD: root
     ports:
