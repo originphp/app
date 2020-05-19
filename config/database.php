@@ -10,14 +10,14 @@ use Origin\Model\Engine\MysqlEngine;
 return [
     'default' => [
         'host' => env('DB_HOST', '127.0.0.1'),
-        'database' => 'origin',
+        'database' => 'application',
         'username' => env('DB_USERNAME'),
         'password' => env('DB_PASSWORD'),
         'className' => MysqlEngine::class
     ],
     'test' => [
         'host' => env('DB_HOST', '127.0.0.1'),
-        'database' => 'origin_test',
+        'database' => 'application_test',
         'username' => env('DB_USERNAME'),
         'password' => env('DB_PASSWORD'),
         'className' => MysqlEngine::class
