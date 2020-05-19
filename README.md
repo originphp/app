@@ -13,7 +13,7 @@ $ composer create-project originphp/app [project_name]
 
 OriginPHP comes with a dockerized development environment.
 
-Install [Docker Desktop](https://www.docker.com/products/docker-desktop) then build the docker containers, this must be done from within the project folder
+Install [Docker Desktop](https://www.docker.com/products/docker-desktop) then build the docker containers, this must be done from within the project folder. The build process only needs to be done once or if you change anything in the `Dockerfile`.
 
 ```linux
 $ cd [project_name]
@@ -30,12 +30,18 @@ $ docker-compose up
 
 Then you will now be able to access your app at [http://localhost:8000/](http://localhost:8000/).
 
-If you want to start the docker container with extra services such as database and caching, then run the script
+To shut down the server
+
+```linux
+$ docker-compose down
+```
+
+If you want to start the docker container with extra services including MySQL,Redis,Minio,MailHog then run the script
 
 ```linux
 $ bin/docker
 ```
 
-You can add or remove docker services by editing the script file directly.
+To shutdown the containers hit `CTRL C`, this will close the docker container and additional services.
 
-To shutdown the containers hit `ctrl-c`
+To learn how to remove or add services such as Postwoman, Elasticsearch, Memcached and PostgreSQL, see [Dockerized Development Environment](https://www.originphp.com/docs/development/dockerized-development-environment/)
