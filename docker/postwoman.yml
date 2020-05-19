@@ -1,0 +1,6 @@
+version: "2.1"
+services:
+  postwoman:
+    image: liyasthomas/postwoman:latest
+    ports:
+      - 3000:3000 
