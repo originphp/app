@@ -24,6 +24,8 @@ function shutdown() {
         unset COMPOSE_FILE
 }
 
+# edit services here, each service should be seperated with a :
 export COMPOSE_FILE=docker-compose.yml:docker/mysql.yml:docker/redis.yml:docker/minio.yml:docker/mailhog.yml
+
 project_name=$(basename `pwd`)
 docker-compose -p $project_name up
