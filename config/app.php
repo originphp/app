@@ -16,7 +16,7 @@ return [
      * Set to true to display error messages (Development mode)
      */
     'debug' => env('APP_DEBUG', true),
-    'name' => 'OriginPHP',
+    'name' => 'Web Application',
     'url' => env('APP_URL', 'http://localhost'),
     'environment' => env('APP_ENV'),
     'namespace' => 'App',
