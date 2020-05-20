@@ -35,14 +35,14 @@ Delete tag:   git tag -d <tag_name>
 ### Changed
 
 - Changed Docker MySQL port to 3307
-- Changed config/app to array
+- Renamed application.php to app.php, and changed to array
 - Changed config/cache to array
 - Changed config/database to array
 - Changed config/email to array
 - Changed config/log to array
 - Changed config/mailbox to array
 - Changed config/storage to array
-- Changed default application name to `application`
+- Changed default database name to `application`
 
 ### Removed
 
