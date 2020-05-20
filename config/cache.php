@@ -19,8 +19,8 @@ return [
     /**
      * Caching setup used by framework
      *
-     * - Model uses this to cache table metadata, if you make changes to table
-     * then  clear this cache.
+     * - Model uses this to cache table metadata.
+     * IMPORTANT: If you make changes to table then use the console command Cache::clear
      */
     'origin' => [
         'className' => FileEngine::class,
