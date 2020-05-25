@@ -27,7 +27,7 @@
     <div class="container">
 
       <h1>OriginPHP Framework</h1>
-      <p>This is the test page to see that all is working ok. You can remove or change this by editing the <strong>config/Routes.php</strong>. This is the route that is used to show this page:</p>
+      <p>This is the test page to see that all is working ok. You can remove or change this by editing the <strong>config/routes.php</strong>. This is the route that is used to show this page:</p>
       <pre>
           Router::add('/', ['controller' => 'pages', 'action' => 'display', 'home']);
       </pre>
@@ -51,7 +51,7 @@
       ?>
 
      <?php
-        $env = CONFIG.DS.'.env.php';
+        $env = CONFIG.DS.'.env';
         if (file_exists($env)) {
             success("{$env} found");
         } else {
