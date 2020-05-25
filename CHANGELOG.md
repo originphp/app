@@ -18,6 +18,12 @@ Create:       git tag -a <tag_name> -m '<tag_message>'
 Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
+## [3.6.1] - 2020-05-25
+
+### Fixed
+- Fixed bootstrap dropdowns not working,renamed popper.js to popper.min.js
+- Fixed home.ctp to check .env not the cached version
+
 ## [3.6.0] - 2020-05-19
 
 ### Added
