@@ -8,14 +8,14 @@
 # portions of the Software.
 #
 # @copyright    Copyright (c) Jamiel Sharief
-# @link          https://www.originphp.com
+# @link         https://www.originphp.com
 # @license      https://opensource.org/licenses/mit-license.php MIT License
 #
 # This loads all the services for docker, you can add or remove by editing the line that starts with export.
 # Use CTRL - C to shutdown (if not you will have to use docker-down --remove-orphans )
 # 
 # For example if you prefered to use postgreSQL instead
-# export COMPOSE_FILE=docker-compose.yml:docker/postgres.yml:docker/redis.yml:docker/minio.yml:docker/mailhog.yml
+# export COMPOSE_FILE=docker-compose.yml:config/docker/postgres.yml:config/docker/redis.yml:config/docker/minio.yml:config/docker/mailhog.yml
 #
 trap shutdown INT
 
@@ -25,7 +25,11 @@ function shutdown() {
 }
 
 # edit services here, each service should be seperated with a :
-export COMPOSE_FILE=docker-compose.yml:docker/mysql.yml:docker/redis.yml:docker/minio.yml:docker/mailhog.yml
+export COMPOSE_FILE=docker-compose.yml:config/docker/mysql.yml:config/docker/redis.yml:config/docker/minio.yml:config/docker/mailhog.yml
 
 project_name=$(basename `pwd`)
+
+echo "OriginPHP Docker Script"
+echo "use CTRL - C to terminate to prevent leaving orphans."
+
 docker-compose -p $project_name up
