@@ -66,7 +66,7 @@ COPY . /var/www
 RUN chown -R www-data:www-data /var/www
 RUN chmod -R 0775 /var/www
 
-ADD docker/apache.conf /etc/apache2/sites-enabled/000-default.conf
+ADD config/docker/apache.conf /etc/apache2/sites-enabled/000-default.conf
 
 WORKDIR /var/www
 
