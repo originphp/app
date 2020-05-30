@@ -30,6 +30,6 @@ export COMPOSE_FILE=docker-compose.yml:config/docker/mysql.yml:config/docker/red
 project_name=$(basename `pwd`)
 
 echo "OriginPHP Docker Script"
-echo "use CTRL - C to terminate to prevent leaving orphans."
-
+echo "Use CTRL - C to shutdown properly."
+echo ""
 docker-compose -p $project_name up
