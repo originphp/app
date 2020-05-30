@@ -20,7 +20,6 @@ Delete tag:   git tag -d <tag_name>
 
 ## [3.7.0] - 2020-05-30
 
-
 ### Fixed
 - Fixed application.css was missing from template
 
