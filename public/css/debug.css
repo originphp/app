@@ -1,7 +1,7 @@
 /**
  * CSS file for Debugger (not Debugbar)
  */
-.preview {
+ .preview {
   padding: 10px;
 }
 
@@ -52,4 +52,21 @@
 
 .stack-frames {
   padding: 0px;
+}
+
+.list-group-item {
+  background-color:#f5f5f5;
+}
+.list-group-item:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+code {
+    font-size: 100%;
+    color:#212529;
+    word-break: break-word;
+}
+.tab-content {
+  background:#fff;
 }

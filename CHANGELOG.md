@@ -18,6 +18,16 @@ Create:       git tag -a <tag_name> -m '<tag_message>'
 Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
+## [3.7.0] - 2020-05-30
+
+
+### Fixed
+- Fixed application.css was missing from template
+
+### Changed
+- Changed debugger code color scheme
+- Changed location of docker configuration folder, moved this to config
+
 ## [3.6.1] - 2020-05-25
 
 ### Fixed
