@@ -15,7 +15,8 @@ $DebugBar = new DebugBar();
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/default.css">
-    
+    <link rel="stylesheet" href="/css/application.css">
+
     <script src="/js/jquery.min.js" ></script>
     <script src="/js/application.js"></script>
     <title><?= $this->title(); ?></title>
