@@ -55,6 +55,8 @@ RUN apt-get update && apt-get install -y \
     postgresql-client \
     php-pgsql \
     php-memcached \
+    sqlite3 \ 
+    php-sqlite3 \
  && rm -rf /var/lib/apt/lists/*
 
 # Setup Web Server

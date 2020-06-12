@@ -18,6 +18,12 @@ Create:       git tag -a <tag_name> -m '<tag_message>'
 Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
+## [3.7.1] - 2020-06-12
+
+### Added
+- Added SQLite to Dockerfile
+- Added HTML Helper DocBlock property tag
+
 ## [3.7.0] - 2020-05-30
 
 ### Fixed
