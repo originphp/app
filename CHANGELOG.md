@@ -19,9 +19,12 @@ Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
 ## [4.0.0] - unreleased
+
+### Changed
+- Changed minimum PHP version 7.4
+
 ### Added
 - Added `config/autoload.php`
-
 
 ## [3.7.2] - 2020-07-02
 ### Added
