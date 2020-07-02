@@ -3,7 +3,7 @@ use Origin\Model\Engine\MysqlEngine;
 
 /**
  * Database configuration
- * Engines are mysql and pgsql
+ * Engines are mysql,pgsql, and sqlite
  * @link https://www.originphp.com/docs/getting-started/
  */
 

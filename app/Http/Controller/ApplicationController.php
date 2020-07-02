@@ -5,9 +5,10 @@ use Origin\I18n\I18n;
 use Origin\Http\Controller\Controller;
 
 /**
- * @property \Origin\Http\Controller\Component\SessionComponent $Session
- * @property \Origin\Http\Controller\Component\CookieComponent $Cookie
  * @property \Origin\Http\Controller\Component\AuthComponent $Auth
+ * @property \Origin\Http\Controller\Component\CookieComponent $Cookie
+ * @property \Origin\Http\Controller\Component\FlashComponent $Flash
+ * @property \Origin\Http\Controller\Component\SessionComponent $Session
  */
 class ApplicationController extends Controller
 {
