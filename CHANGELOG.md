@@ -18,6 +18,10 @@ Create:       git tag -a <tag_name> -m '<tag_message>'
 Upload:       git push origin --tags
 Delete tag:   git tag -d <tag_name>
 
+## [3.7.2] - 2020-07-02
+### Added
+- Added Flash component DocBlock property tag
+
 ## [3.7.1] - 2020-06-12
 
 ### Added
