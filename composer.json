@@ -15,7 +15,7 @@
   "require-dev": {
     "originphp/debug-plugin": "^2.0",
     "originphp/generate": "^1.0",
-    "phpunit/phpunit": "^8.0"
+    "phpunit/phpunit": "^8.5"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
