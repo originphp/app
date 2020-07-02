@@ -12,6 +12,7 @@ use Origin\Model\ConnectionManager;
 
 require __DIR__ . '/paths.php';
 require ORIGIN . '/src/bootstrap.php';
+require __DIR__ . '/autoload.php';
 
 /**
  * Loads the config file, for example `log` will load `config/log.php`.
