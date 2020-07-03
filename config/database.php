@@ -1,9 +1,10 @@
 <?php
+
 use Origin\Model\Engine\MysqlEngine;
 
 /**
  * Database configuration
- * Engines are mysql,pgsql, and sqlite
+ * Engines are mysql,postgres and sqlite
  * @link https://www.originphp.com/docs/getting-started/
  */
 
