@@ -6,7 +6,7 @@
 
 - Changed OriginPHP framework minimum version 3
 - Changed PHP minimum version 7.3
-- Changed PHPUnit minimum version 9
+- Changed PHPUnit minimum version 9.2
 
 ### Added
 

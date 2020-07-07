@@ -11,7 +11,7 @@ use Origin\Storage\Storage;
 use Origin\Model\ConnectionManager;
 
 require __DIR__ . '/paths.php';
-require ORIGIN . '/src/bootstrap.php';
+require dirname(__DIR__) . '/vendor/originphp/Core/bootstrap.php';
 require __DIR__ . '/autoload.php';
 
 /**
@@ -22,14 +22,20 @@ require __DIR__ . '/autoload.php';
  * Config::load('stripe');
  * $token  = Config::read('Stripe.privateKey');
  */
-Config::load('app');
-Config::load('log');
-Config::load('cache');
-Config::load('database');
-Config::load('storage');
-Config::load('email');
-Config::load('queue');
-Config::load('mailbox');
+
+ try {
+     Config::load('app');
+     Config::load('log');
+     Config::load('cache');
+     Config::load('database');
+     Config::load('storage');
+     Config::load('email');
+     Config::load('queue');
+     Config::load('mailbox');
+ } catch (\Exception $exception) {
+     $message = env('APP_DEBUG') === true ? $exception->getMessage() : 'Error reading/parsing configuration files.';
+     exit($message . "\n");
+ }
 
 /**
  * Configure the server
@@ -70,4 +76,4 @@ Plugin::initialize();
 /**
  * Load the routes after plugins have been loaded
  */
-require CONFIG . '/routes.php';
+require __DIR__ . '/routes.php';

@@ -15,4 +15,3 @@ define('WEBROOT', ROOT . '/public');
 define('TMP', ROOT . '/tmp');
 define('LOGS', ROOT . '/logs');
 define('CACHE', TMP . '/cache');
-define('ORIGIN', ROOT . '/vendor/originphp/framework');
