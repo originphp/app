@@ -1,6 +1,6 @@
 # Changelog
 
-## [4.0.0] - unreleased
+## [4.0.0] - 2020-07-17
 
 ### Changed
 
@@ -11,14 +11,18 @@
 ### Added
 
 - Added `config/autoload.php`
+- Added `config/preload.php`
 
 ## [3.7.2] - 2020-07-02
+
 ### Added
+
 - Added Flash component DocBlock property tag
 
 ## [3.7.1] - 2020-06-12
 
 ### Added
+
 - Added SQLite to Dockerfile
 - Added HTML Helper DocBlock property tag
 
@@ -28,12 +32,14 @@
 - Fixed application.css was missing from template
 
 ### Changed
+
 - Changed debugger code color scheme
 - Changed location of docker configuration folder, moved this to config
 
 ## [3.6.1] - 2020-05-25
 
 ### Fixed
+
 - Fixed bootstrap dropdowns not working,renamed popper.js to popper.min.js
 - Fixed home.ctp to check .env not the cached version
 
