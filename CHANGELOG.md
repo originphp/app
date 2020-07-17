@@ -1,6 +1,9 @@
 # Changelog
 
-## [4.0.0] - 2020-07-17
+## [3.8.0] - 2020-07-17
+
+Technically this should be version 4.0, however this package does not update, and I want to try and sync with the
+framework verioning numbers.
 
 ### Changed
 
