@@ -11,7 +11,7 @@ use Origin\Storage\Storage;
 use Origin\Model\ConnectionManager;
 
 require __DIR__ . '/paths.php';
-require dirname(__DIR__) . '/vendor/originphp/Core/bootstrap.php';
+require dirname(__DIR__) . '/vendor/originphp/framework/src/Core/bootstrap.php';
 require __DIR__ . '/autoload.php';
 
 /**
