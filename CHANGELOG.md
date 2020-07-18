@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.8.1] - 2020-07-xx
+
+### Changed
+
+- Changed error 500 template to show error code and message
+
 ## [3.8.0] - 2020-07-17
 
 Technically this should be version 4.0, however this package does not update, and I want to try and sync with the
