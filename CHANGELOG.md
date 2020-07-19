@@ -1,6 +1,19 @@
 # Changelog
 
-## [3.8.1] - 2020-07-xx
+
+## [3.9.0] - 2020-07-19
+
+### Added
+
+- Added `public/maintenance.html`
+
+
+### Changed
+
+- Changed `Http\Application` to load `MaintenanceModeMiddleware`
+- Changed error templates to load local bootstrap
+
+## [3.8.1] - 2020-07-18
 
 ### Changed
 
