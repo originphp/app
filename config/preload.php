@@ -2,7 +2,6 @@
 
 use App\Http\Controller\ApplicationController;
 use Origin\Core\Preloader;
-use Origin\Core\Autoloader;
 
 /**
  * PHP 7.4+ preloading
