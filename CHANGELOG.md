@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [3.9.1] - 2020-07-21
+
+### Fixed
+
+- Fixed `phpunit.xml.dist` which was still configured for split version
+
 ## [3.9.0] - 2020-07-19
 
 ### Added
