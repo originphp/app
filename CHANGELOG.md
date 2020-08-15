@@ -1,5 +1,22 @@
 # Changelog
 
+## [3.10.0] - 2020-08-15
+
+### Changed
+
+- Changed default database host to `localhost` from docker `db`
+
+### Added
+
+- Added `Storage` constant
+- Added `Collection` to composer.json
+- Added `Filesystem` to composer.json
+
+### Changed
+
+- Changed `ImapFixture` to not create table using schema as `db:test:prepare` now handles this
+- Changed `MailboxFixture` to not create table using schema as `db:test:prepare` now handles this
+- Changed `QueueFixture` to not create table using schema as `db:test:prepare` now handles this
 
 ## [3.9.1] - 2020-07-21
 
@@ -28,7 +45,7 @@
 ## [3.8.0] - 2020-07-17
 
 Technically this should be version 4.0, however this package does not update, and I want to try and sync with the
-framework verioning numbers.
+framework versioning numbers.
 
 ### Changed
 
