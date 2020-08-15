@@ -3,26 +3,15 @@ namespace App\Test\Fixture;
 
 use Origin\TestSuite\Fixture;
 
+/**
+ * Run db:schema:load mailbox to create the table, then use db:schema:dump to update your
+ * schema file, then use db:test:prepare
+ */
+
 class MailboxFixture extends Fixture
 {
     protected $table = 'mailbox';
     
-    protected $schema = [
-        'columns' => [
-            'id' => ['type' => 'integer', 'limit' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'autoIncrement' => true],
-            'message_id' => ['type' => 'string', 'null' => false, 'default' => null],
-            'checksum' => ['type' => 'string', 'limit' => 40, 'null' => false, 'default' => null],
-            'message' => ['type' => 'text', 'limit' => 4294967295, 'null' => false, 'default' => null],
-            'status' => ['type' => 'string', 'null' => false, 'default' => null],
-            'created' => ['type' => 'datetime', 'null' => false, 'default' => null],
-            'modified' => ['type' => 'datetime', 'null' => false, 'default' => null],
-        ],
-        'constraints' => [
-            'primary' => ['type' => 'primary', 'column' => 'id'],
-        ],
-        'options' => ['engine' => 'InnoDB', 'autoIncrement' => 1000]
-    ];
-
     protected $records = [
         [
             'message_id' => '<CAD05h8p3WCJLqVLVLebaE03KskpD8+AGEHEjZJ1JvnJpuh2+1w@mail.gmail.com>',
