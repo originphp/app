@@ -68,20 +68,23 @@ select:not([multiple]) {
   background-repeat: no-repeat;
 }
 
-input.form-control, select.form-control, textarea.form-control {
-  outline: none;
-  outline-style: none;
-  box-shadow: none;
-  border-radius: 0px;
+input.form-control,
+select.form-control,
+textarea.form-control {
+    outline: none;
+    outline-style: none;
+    box-shadow: none;
+    border-radius: 0px;
 }
 
 .form-control:focus {
-  outline: none;
-  outline-style: none;
-  box-shadow: none;
-  background: #fff;
-  outline: 2px solid #0065FF;
-  border-radius: 0px;
+    outline: none;
+    outline-style: none;
+    box-shadow: none;
+    background: #fff;
+    border: 1px solid #0065FF;
+    outline: 1px solid #0065FF;
+    border-radius: 0px;
 }
 
 /**
