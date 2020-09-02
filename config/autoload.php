@@ -4,7 +4,7 @@ use Origin\Core\Autoloader;
 /**
  * Handles the autoloading using the OriginPHP autoloader.
  *
- * If you want prefer to use or want to switch to composer for autoloading then
+ * If you want/prefer to use or want to switch to composer for autoloading then
  * you can add the following to your composer.json
  *
  * {
