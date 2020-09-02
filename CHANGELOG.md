@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.10.1] - 2020-09-02
+
+### Changed
+
+- Changed phpunit to use tests/bootstrap.php
+
+### Fixed
+
+- Fixed CSS for focus on inputs
+
 ## [3.10.0] - 2020-08-15
 
 ### Changed
