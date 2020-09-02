@@ -10,13 +10,13 @@ use Origin\Http\Router;
 * Add your routes here
 * @example
 *
-* Router::add('/login',['controller'=>'Users','action'=>'login']);
+* Router::add('/login', ['controller'=>'Users','action'=>'login']);
 * Router::add('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
 * Router::add('/pages/*', ['controller'=>'Pages','action'=>'display']);
 * Router::add('/:controller/:action/:id');
-* Router::add('/:controller/:action.:type');
 * Router::add('/cooks/:action/*', ['controller' => 'Users']);
 * Router::add('/rest/*',['controller' => 'Rest', 'action' => 'api_dispatcher']);
+* Router::add('/admin/:controller/:action/*', ['prefix' => 'admin']);
 */
 
 Router::add('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
