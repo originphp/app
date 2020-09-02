@@ -36,7 +36,7 @@ To shut down the server
 $ docker-compose down
 ```
 
-If you want to start the docker container with extra services including MySQL,Redis,Minio,MailHog then run the script
+If you want to start the docker container with extra services including MySQL, Redis, Minio, MailHog then run the script
 
 ```linux
 $ bin/docker
