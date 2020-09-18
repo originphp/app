@@ -30,18 +30,13 @@ main {
 /**
  * Form Error handling
  */
-input.error {
-  border-color: red;
-  border-width: 2px;
+input.error, select.error {
+  border: 2px solid #ff0000;
 }
 
 div.error-message {
   font-weight: bold;
   color: #ff0000;
-}
-
-input.form-error, select.form-error {
-  border: 2px solid #ff0000;
 }
 
 /**
