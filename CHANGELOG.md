@@ -1,5 +1,12 @@
 # Changelog
 
+
+## [3.10.11] - 2020-09-18
+
+### Fixed
+
+- Fixed CSS error class for select
+
 ## [3.10.1] - 2020-09-02
 
 ### Changed
