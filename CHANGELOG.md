@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [3.11.0] - 2020-09-26
+
+### Added
+
+- Added Storage version 2
+- Added Filesystem version 2
+
 ## [3.10.2] - 2020-09-18
 
 ### Fixed
