@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit colors="true" processIsolation="false" stopOnFailure="false" bootstrap="tests/bootstrap.php" backupGlobals="true">
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" colors="true" processIsolation="false" stopOnFailure="false" bootstrap="tests/bootstrap.php" backupGlobals="true" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
+    <coverage>
+        <include>
+            <directory suffix=".php">./app/</directory>
+        </include>
+    </coverage>
     <testsuites>
         <testsuite name="App Test Suite">
             <directory>./tests/TestCase/</directory>
@@ -10,11 +15,6 @@
         <env name="ORIGIN_ENV" value="test"/>
     </php>
     <listeners>
-       <listener class="Origin\TestSuite\OriginTestListener"  file ="./vendor/originphp/framework/src/TestSuite/OriginTestListener.php"></listener>
+        <listener class="Origin\TestSuite\OriginTestListener" file="./vendor/originphp/framework/src/TestSuite/OriginTestListener.php"/>
     </listeners>
-    <filter>
-        <whitelist>
-            <directory suffix=".php">./app/</directory>
-        </whitelist>
-    </filter>
 </phpunit>
