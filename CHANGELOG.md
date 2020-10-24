@@ -1,5 +1,10 @@
 # Changelog
 
+## [3.11.1] - 2020-10-24
+
+### Fixed
+
+- Fixed warning from PHPunit to upgrade XML setting caused by PHPunit 9.3
 
 ## [3.11.0] - 2020-09-26
 
