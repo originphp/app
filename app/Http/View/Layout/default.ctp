@@ -4,7 +4,6 @@
  */
 use Debug\DebugBar;
 
-$DebugBar = new DebugBar();
 ?>
 <!doctype html>
 <html lang="en">
@@ -33,7 +32,19 @@ $DebugBar = new DebugBar();
       <?= $this->content() ?>
     </main>
  
-    <?= $DebugBar->render() ?>
+    <script>
+      $.ajaxSetup({
+          headers: {
+              'X-CSRF-Token': '<?= $this->request->params('csrfToken') ?>'
+          }
+      });
+    
+      $( document ).ready(function() {
+          console.log( "ready!" );
+      });
+    </script>
+
+    <?= (new DebugBar())->render() ?>
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
   </body>
