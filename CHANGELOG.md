@@ -1,10 +1,16 @@
 # Changelog
 
+## [3.12.0] - 2020-11-27
+
+### Changed
+
+- Changed bin/docker script to accept arguments  e.g. run or exec app bash
+
 ## [3.11.1] - 2020-10-24
 
 ### Fixed
 
-- Fixed warning from PHPunit to upgrade XML setting caused by PHPunit 9.3
+- Fixed warning from PHPUnit to upgrade XML setting caused by PHPunit 9.3
 
 ## [3.11.0] - 2020-09-26
 

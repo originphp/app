@@ -29,7 +29,19 @@ export COMPOSE_FILE=docker-compose.yml:config/docker/mysql.yml:config/docker/red
 
 project_name=$(basename `pwd`)
 
-echo "OriginPHP Docker Script"
-echo "Use CTRL - C to shutdown properly."
-echo ""
-docker-compose -p $project_name up
+if [ "$1" = "up" ]
+  then
+  echo "OriginPHP Docker Script"
+  echo "Use CTRL - C to shutdown properly."
+  echo ""
+fi
+
+# To start a container:
+#
+# $ bin/docker up
+#
+# To enter a container:
+#
+# $ bin/docker run app bash
+
+docker-compose -p $project_name "$@"
