@@ -12,7 +12,8 @@
     "originphp/log": "^1.0",
     "originphp/storage": "^2.0",
     "originphp/collection": "^1.0",
-    "originphp/filesystem": "^2.0"
+    "originphp/filesystem": "^2.0",
+    "originphp/text": "^1.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^9.2",
