@@ -1,5 +1,15 @@
 # Changelog
 
+### Added
+
+- Added bin/release script
+- Added Text package to composer.json
+
+### Changed
+
+- Added CSRF token as HTML header in layouts
+- Added check for debug class in layouts
+
 ## [3.12.0] - 2020-11-27
 
 ### Changed
