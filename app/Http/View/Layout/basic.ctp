@@ -4,7 +4,6 @@
  */
 use Debug\DebugBar;
 
-$DebugBar = new DebugBar();
 ?>
 <!doctype html>
 <html lang="en">
@@ -12,6 +11,7 @@ $DebugBar = new DebugBar();
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="<?= $this->request->params('csrfToken') ?>">
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/default.css">
@@ -29,6 +29,10 @@ $DebugBar = new DebugBar();
  
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <?= $DebugBar->render() ?>
+    <?php
+      if (class_exists(DebugBar::class)) {
+          echo (new DebugBar())->render();
+      }
+    ?>
   </body>
 </html>

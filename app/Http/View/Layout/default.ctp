@@ -11,6 +11,7 @@ use Debug\DebugBar;
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="<?= $this->request->params('csrfToken') ?>">
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/default.css">
@@ -34,18 +35,21 @@ use Debug\DebugBar;
  
     <script>
       $.ajaxSetup({
-          headers: {
-              'X-CSRF-Token': '<?= $this->request->params('csrfToken') ?>'
-          }
+        headers: {
+            'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+        }
       });
     
       $( document ).ready(function() {
           console.log( "ready!" );
       });
     </script>
-
-    <?= (new DebugBar())->render() ?>
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <?php
+      if (class_exists(DebugBar::class)) {
+          echo (new DebugBar())->render();
+      }
+    ?>
   </body>
 </html>
