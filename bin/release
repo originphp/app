@@ -8,7 +8,7 @@
 if [ $# -eq 0 ]; then
     echo "Usage: release <version>";
     echo "       release 1.2.1";
-    exit 1
+    exit
 fi
 
 VERSION=$1

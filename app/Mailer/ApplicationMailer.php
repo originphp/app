@@ -6,7 +6,9 @@ use Origin\Mailer\Mailer;
 class ApplicationMailer extends Mailer
 {
     protected $defaults = [
-        'from' => ['no-reply@example.com' => 'Web Application'],
+        'from' => [
+            'no-reply@example.com' => 'Web Application'
+        ],
     ];
 
     protected $layout = 'default';

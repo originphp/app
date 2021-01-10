@@ -16,9 +16,7 @@
  * Front Controller
  */
 
-/**
- * Built-in PHP server router
- */
+// Built-in PHP server router
 if (php_sapi_name() === 'cli-server') {
     $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
     if (file_exists(__DIR__ . $path) && is_file(__DIR__ . $path)) {
@@ -26,9 +24,7 @@ if (php_sapi_name() === 'cli-server') {
     }
 }
 
-/**
- * Start Application bootstrap process
- */
+// Start Application bootstrap process
 require dirname(__DIR__) . '/config/bootstrap.php';
 
 use App\Http\Application;
