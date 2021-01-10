@@ -1,7 +1,8 @@
 node_modules/
-/composer.lock
-/phpunit.xml
-/vendor
+composer.lock
+phpunit.xml
+vendor/
 .env
 .env.php
 .vscode
+.phpunit.result.cache
