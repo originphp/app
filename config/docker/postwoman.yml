@@ -1,6 +1,6 @@
 version: "2.1"
 services:
   postwoman:
-    image: liyasthomas/postwoman:latest
+    image: hoppscotch/hoppscotch:latest
     ports:
       - 3000:3000 
