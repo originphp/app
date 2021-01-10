@@ -17,7 +17,16 @@ if (isset($argv[1])) {
     $port = $argv[1];
 }
 
-echo "OriginPHP Development Server\n";
-echo "Starting on http://localhost:{$port}\n";
+echo '
+   ____       _       _       ____  __  ______ 
+  / __ \_____(_)___ _(_)___  / __ \/ / / / __ \
+ / / / / ___/ / __ `/ / __ \/ /_/ / /_/ / /_/ /
+/ /_/ / /  / / /_/ / / / / / ____/ __  / ____/ 
+\____/_/  /_/\__, /_/_/ /_/_/   /_/ /_/_/      
+            /____/                             
+
+';
+echo "Starting development server\n";
+echo "url: http://localhost:{$port}\n";
 $cmd = "php -S localhost:{$port} -t public";
 pclose(popen($cmd, 'r'));
