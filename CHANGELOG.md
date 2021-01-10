@@ -1,5 +1,7 @@
 # Changelog
 
+## [3.13.0] - 2021-01-10
+
 ### Added
 
 - Added bin/release script
