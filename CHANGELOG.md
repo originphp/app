@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.14.0] - 2021-01-14
+
+### Changed
+
+- Bumped packages to minimum PHP 7.3 versions
+
+### Fixed
+
+- Fixed pg_dump mismatch error
+
 ## [3.13.0] - 2021-01-10
 
 ### Added

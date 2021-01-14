@@ -39,7 +39,8 @@ $ docker-compose down
 If you want to start the docker container with extra services including MySQL, Redis, Minio, MailHog then run the script
 
 ```linux
-$ bin/docker
+$ bin/docker up
+$ bin/docker down
 ```
 
 To shutdown the containers hit `CTRL C`, this will close the docker container and additional services.

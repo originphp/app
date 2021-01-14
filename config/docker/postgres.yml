@@ -10,7 +10,7 @@ services:
     volumes:
       - .:/var/www
   db:
-    image: postgres
+    image: postgres:12.5
     volumes:
       - pg-data:/var/lib/postgresql/data
     environment:
