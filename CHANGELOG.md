@@ -1,5 +1,21 @@
 # Changelog
 
+## [3.15.0] - 2021-01-27
+
+### Added
+
+- Added bin/test
+- Added bin/coverage
+
+### Removed
+
+- Removed bin/db
+
+### Changed
+
+- Changed Dockerfile xdebug installation
+- Changed Dockerfile redis driver installation
+
 ## [3.14.0] - 2021-01-14
 
 ### Changed
