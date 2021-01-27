@@ -12,7 +12,7 @@
 #
 FROM ubuntu:20.04
 LABEL maintainer="Jamiel Sharief"
-LABEL version="2.0.0"
+LABEL version="2.1.0"
 
 # Setup Enviroment
 
@@ -57,6 +57,8 @@ RUN apt-get update && apt-get install -y \
     php-memcached \
     sqlite3 \ 
     php-sqlite3 \
+    php-redis \
+    php-xdebug \
  && rm -rf /var/lib/apt/lists/*
 
 # Setup Web Server
@@ -76,20 +78,6 @@ WORKDIR /var/www
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN composer install --no-interaction
 
-# Install X-Debug for PHPUnit Code Coverage (Causes major Performance decrease when extension is enabled)
-RUN pecl install xdebug
-#RUN echo 'zend_extension="/usr/lib/php/20190902/xdebug.so"' >> /etc/php/7.4/cli/php.ini
-#RUN echo 'xdebug.default_enable=0' >> /etc/php/7.4/cli/php.ini
-
-# Instructions to run xdebug temporarily i.e to generate code coverage
-# To enable until next restart run these commands in bash
-# echo 'zend_extension="/usr/lib/php/20190902/xdebug.so"' >> /etc/php/7.4/cli/php.ini
-# echo 'xdebug.default_enable=0' >> /etc/php/7.4/cli/php.ini
-
 RUN echo 'apc.enable_cli=1' >>  /etc/php/7.4/cli/php.ini
-
-RUN pecl install redis
-RUN echo 'extension=redis.so' >> /etc/php/7.4/cli/php.ini
-RUN echo 'extension=redis.so' >> /etc/php/7.4/apache2/php.ini
 
 CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]
