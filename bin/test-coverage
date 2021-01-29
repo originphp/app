@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+# OriginPHP
+# Copyright 2021 Jamiel Sharief
+#
+# Runs PHPUnit tests with code coverage
+#
+vendor/bin/phpunit --coverage-html coverage $@

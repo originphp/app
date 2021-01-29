@@ -6,3 +6,4 @@ vendor/
 .env.php
 .vscode
 .phpunit.result.cache
+coverage/

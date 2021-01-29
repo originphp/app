@@ -1,5 +1,18 @@
 # Changelog
 
+## [3.16.0] - 2021-01-29
+
+### Added
+
+- Added passing arguments to bin/test
+- Added passing arguments to bin/test-coverage
+- Added coverage folder to .gitignore
+
+### Changed
+
+- Renamed bin/coverage to bin/test-coverage
+
+
 ## [3.15.0] - 2021-01-27
 
 ### Added
