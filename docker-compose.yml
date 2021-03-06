@@ -36,11 +36,6 @@ services:
     command: --default-authentication-plugin=mysql_native_password
   redis:
     image: redis
-  mailhog:
-    image: mailhog/mailhog
-    ports:
-      - 1025:1025 # smtp server
-      - 8025:8025 # web ui
 #  db:
 #    image: postgres:12.5
 #    volumes:
@@ -84,6 +79,11 @@ services:
 #      - es-data:/usr/share/elasticsearch/data
 #    ports:
 #      - 9200:9200
+#  mailhog:
+#    image: mailhog/mailhog
+#    ports:
+#      - 1025:1025 # smtp server
+#      - 8025:8025 # web ui
 volumes:
   mysql-data:
 #  pg-data:
