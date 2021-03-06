@@ -41,34 +41,34 @@ services:
     ports:
       - 1025:1025 # smtp server
       - 8025:8025 # web ui
-  #  db:
-  #    image: postgres:12.5
-  #    volumes:
-  #      - pg-data:/var/lib/postgresql/data
-  #    environment:
-  #      POSTGRES_USER: root
-  #      POSTGRES_PASSWORD: root
-  #    ports:
-  #      - "5432:5432"
-  #  db:
-  #    image: mariadb
-  #    restart: always
-  #    environment:
-  #      MYSQL_ROOT_PASSWORD: root
-  #    ports:
-  #      - "3306:3306"
-  #    volumes:
-  #      - mysql-data:/var/lib/mysql
-  #  minio:
-  #    image: minio/minio
-  #    volumes:
-  #      - minio-data:/data
-  #    ports:
-  #      - "9000:9000"
-  #    environment:
-  #      MINIO_ACCESS_KEY: minio
-  #      MINIO_SECRET_KEY: b1816172fd2ba98f3af520ef572e3a47
-  #    command: server /data
+#  db:
+#    image: postgres:12.5
+#    volumes:
+#      - pg-data:/var/lib/postgresql/data
+#    environment:
+#      POSTGRES_USER: root
+#      POSTGRES_PASSWORD: root
+#    ports:
+#      - "5432:5432"
+#  db:
+#    image: mariadb
+#    restart: always
+#    environment:
+#      MYSQL_ROOT_PASSWORD: root
+#    ports:
+#      - "3306:3306"
+#    volumes:
+#      - mysql-data:/var/lib/mysql
+#  minio:
+#    image: minio/minio
+#    volumes:
+#      - minio-data:/data
+#    ports:
+#      - "9000:9000"
+#    environment:
+#      MINIO_ACCESS_KEY: minio
+#      MINIO_SECRET_KEY: b1816172fd2ba98f3af520ef572e3a47
+#    command: server /data
 #  hoppscotch:
 #    image: hoppscotch/hoppscotch
 #    ports:
@@ -90,4 +90,3 @@ volumes:
 # minio-data:
 # es-data:
 #   driver: local
-
