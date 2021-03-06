@@ -1,5 +1,20 @@
 # Changelog
 
+## [3.18.0] - 2021-03-06
+
+### Changed
+
+- Docker web server now uses SSL and can be accessed https://localhost
+- Changed Docker setup, all config is now in docker-compose and can be uncommented or commented out to enable disable additonal services.
+
+### Added
+
+- Added cron package to Dockerfile
+
+### Removed
+
+- Removed bin/docker
+
 ## [3.17.0] - 2021-03-06
 
 ### Added
