@@ -12,10 +12,9 @@
 #
 FROM ubuntu:20.04
 LABEL maintainer="Jamiel Sharief"
-LABEL version="2.1.0"
+LABEL version="2.2.0"
 
-# Setup Enviroment
-
+# Setup Environment
 ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
 ENV DATE_TIMEZONE UTC
@@ -59,16 +58,19 @@ RUN apt-get update && apt-get install -y \
     php-sqlite3 \
     php-redis \
     php-xdebug \
+    cron \
  && rm -rf /var/lib/apt/lists/*
 
-# Setup Web Server
 
-RUN a2enmod rewrite
-RUN a2enmod ssl
 COPY . /var/www
 
 RUN chown -R www-data:www-data /var/www
 RUN chmod -R 0775 /var/www
+
+# Setup Web Server
+RUN mkdir /etc/apache2/ssl
+RUN openssl req -x509 -sha256 -nodes -newkey rsa:4096 -keyout /etc/apache2/ssl/privateKey -out /etc/apache2/ssl/certificate -subj "/CN=localhost" -extensions EXT -config /var/www/config/docker/ssl.conf
+RUN a2enmod rewrite ssl
 
 ADD config/docker/apache.conf /etc/apache2/sites-enabled/000-default.conf
 
