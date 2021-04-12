@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.18.1] - 2021-04-12
+
+### Fixed
+
+- Fixed finderAll override added in [3.17.0]
+
 ## [3.18.0] - 2021-03-06
 
 ### Changed

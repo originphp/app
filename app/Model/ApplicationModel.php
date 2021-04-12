@@ -26,7 +26,7 @@ class ApplicationModel extends Model
      */
     protected function finderAll(ArrayObject $options) : Collection
     {
-        $result = parent::finderAll($$options);
+        $result = parent::finderAll($options);
         return $result ?: new Collection([]);
     }
 }
