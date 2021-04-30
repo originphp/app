@@ -1,6 +1,14 @@
 # Changelog
 
+## [3.19.1] - 2021-04-30
+
+### Removed
+
+- Removed deprecated SessionTimeout setting
+
 ## [3.19.0] - 2021-04-30
+
+### Added
 
 - Added Redis settings
 - Added Session settings
