@@ -32,6 +32,7 @@ require __DIR__ . '/autoload.php';
      Config::load('email');
      Config::load('queue');
      Config::load('mailbox');
+     Config::load('session');
  } catch (\Exception $exception) {
      $message = env('APP_DEBUG') === true ? $exception->getMessage() : 'Error reading/parsing configuration files.';
      exit($message . "\n");

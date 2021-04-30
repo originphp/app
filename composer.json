@@ -6,7 +6,7 @@
   "license": "MIT",
   "require": {
     "php": ">=7.3.0",
-    "originphp/framework": "^3.12",
+    "originphp/framework": "^3.24",
     "originphp/commands": "^3.0",
     "originphp/cache": "^2.0",
     "originphp/log": "^2.0",

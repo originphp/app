@@ -3,6 +3,7 @@
  * @var \App\Http\View\ApplicationView $this
  */
 use Debug\DebugBar;
+use Origin\Core\Config;
 
 ?>
 <!doctype html>
@@ -11,6 +12,7 @@ use Debug\DebugBar;
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="refresh" content="<?= Config::read('Session.timeout') + 1 ?>">
     <meta name="csrf-token" content="<?= $this->request->params('csrfToken') ?>">
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">

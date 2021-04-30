@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.19.0] - 2021-04-30
+
+- Added Redis settings
+- Added Session settings
+- Added SessionMiddleware to Application
+
 ## [3.18.2] - 2021-04-12
 
 ### Fixed
@@ -8,7 +14,7 @@
 
 ## [3.18.0] - 2021-03-06
 
-### Changed
+### Changed]
 
 - Docker web server now uses SSL and can be accessed https://localhost
 - Changed Docker setup, all config is now in docker-compose and can be uncommented or commented out to enable disable additonal services.

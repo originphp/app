@@ -9,6 +9,7 @@ use Origin\Http\BaseApplication;
 
 use Origin\Http\Middleware\CsrfProtectionMiddleware;
 use Origin\Http\Middleware\MaintenanceModeMiddleware;
+use Origin\Http\Middleware\SessionMiddleware;
 
 class Application extends BaseApplication
 {
@@ -23,8 +24,12 @@ class Application extends BaseApplication
      */
     protected function initialize() : void
     {
+        // Load first
+        $this->loadMiddleware(SessionMiddleware::class);
+
         $this->loadMiddleware(CsrfProtectionMiddleware::class, [
-            'httpOnly' => true,
+            'tokenLength' => 32,  // CSRF token length 128 bits (16 bytes) is the recommended minimum
+            'singleUse' => true   // Disable for applications that use AJAX requests or mutliple tabs
         ]);
         $this->loadMiddleware(MaintenanceModeMiddleware::class);
     }
