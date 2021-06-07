@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.20.0] - 2021-06-07
+
+### Added
+
+- Added Redis configuration and updated bootstrap to load this
+
 ## [3.19.1] - 2021-04-30
 
 ### Removed
