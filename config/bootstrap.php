@@ -9,6 +9,7 @@ use Origin\Email\Email;
 use Origin\Mailbox\Mailbox;
 use Origin\Storage\Storage;
 use Origin\Model\ConnectionManager;
+use Origin\Redis\Redis;
 
 require __DIR__ . '/paths.php';
 require dirname(__DIR__) . '/vendor/originphp/framework/src/Core/bootstrap.php';
@@ -32,6 +33,7 @@ require __DIR__ . '/autoload.php';
      Config::load('email');
      Config::load('queue');
      Config::load('mailbox');
+     Config::load('redis');
      Config::load('session');
  } catch (\Exception $exception) {
      $message = env('APP_DEBUG') === true ? $exception->getMessage() : 'Error reading/parsing configuration files.';
@@ -56,7 +58,7 @@ Storage::config(Config::consume('Storage'));
 Email::config(Config::consume('Email'));
 Queue::config(Config::consume('Queue'));
 Mailbox::config(Config::consume('Mailbox'));
-
+Redis::config(Config::consume('Redis'));
 /**
  * Load additional files here
  * @example
