@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.20.1] - 2021-06-07
+
+### Fixed
+
+- Fixed application URL, now shows as HTTPs on port 443
+
 ## [3.20.0] - 2021-06-07
 
 ### Added

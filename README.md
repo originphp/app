@@ -28,7 +28,7 @@ If you just want a web server then run the `docker-compose` command
 $ docker-compose up
 ```
 
-Then you will now be able to access your app at [http://localhost:8000/](http://localhost:8000/).
+Then you will now be able to access your app at [https://localhost/](https://localhost/).
 
 To shut down the server
 
