@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.21.0] - 2021-06-08
+
+### Changed
+
+- Changed the the self signed cert length to 10 years
+
+### Removed
+
+- Removed ApplicationService, the generator no longer extends this
+
 ## [3.20.1] - 2021-06-07
 
 ### Fixed
