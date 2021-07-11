@@ -1,7 +1,5 @@
 <?php
-/**
- * Application initialization for
- */
+declare(strict_types = 1);
 namespace App\Console;
 
 use Origin\Console\BaseApplication;
