@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.22.0] - 2021-07-11
+
+### Added
+
+- Added strict type declarations
+
+### Changed
+
+- Renamed empty to .gitkeep
+
 ## [3.21.0] - 2021-06-08
 
 ### Changed
