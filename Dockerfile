@@ -69,7 +69,7 @@ RUN chmod -R 0775 /var/www
 
 # Setup Web Server
 RUN mkdir /etc/apache2/ssl
-RUN openssl req -x509 -sha256 -nodes -newkey -days 3650 rsa:4096 -keyout /etc/apache2/ssl/privateKey -out /etc/apache2/ssl/certificate -subj "/CN=localhost" -extensions EXT -config /var/www/config/docker/ssl.conf
+RUN openssl req -x509 -sha256 -nodes -newkey rsa:4096 -days 3650 -keyout /etc/apache2/ssl/privateKey -out /etc/apache2/ssl/certificate -subj "/CN=localhost" -extensions EXT -config /var/www/config/docker/ssl.conf
 RUN a2enmod rewrite ssl
 
 ADD config/docker/apache.conf /etc/apache2/sites-enabled/000-default.conf

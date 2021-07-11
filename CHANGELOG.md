@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.22.1] - 2021-07-11
+
+### Fixed
+
+- Fixed docker build error due to cert change
+
 ## [3.22.0] - 2021-07-11
 
 ### Added
@@ -10,7 +16,7 @@
 
 - Renamed empty to .gitkeep
 
-## [3.21.0] - 2021-06-08
+## [3.21.0] - 2021-07-08
 
 ### Changed
 
